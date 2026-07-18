@@ -1,0 +1,982 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="2026–2029 로보틱스, 컴퓨터 비전, 머신러닝 및 인공지능 주요 학회 개최지 통합표">
+  <title>2026–2029 주요 학회 개최지 통합표</title>
+  <style>
+    :root {
+      --ink: #18221d;
+      --muted: #5c6962;
+      --paper: #fbfaf6;
+      --surface: #ffffff;
+      --line: #dfe5df;
+      --year-line: #aeb9b2;
+      --track-line: #b8c1bb;
+      --green: #184e3a;
+      --green-soft: #e8f1ec;
+      --amber: #a96518;
+      --amber-soft: #fff4e2;
+      --blue: #285a77;
+      --blue-soft: #edf5f8;
+      --shadow: 0 18px 50px rgba(26, 46, 36, .08);
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--paper);
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 90% 3%, rgba(190, 215, 199, .34), transparent 28rem),
+        var(--paper);
+      font-family: "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", "Segoe UI", sans-serif;
+      line-height: 1.65;
+      word-break: keep-all;
+    }
+
+    a { color: var(--green); text-underline-offset: 3px; }
+    a:hover { color: #0f3527; }
+
+    .page {
+      width: min(1480px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 56px 0 80px;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: clamp(30px, 5vw, 64px);
+      border: 1px solid rgba(24, 78, 58, .15);
+      border-radius: 30px;
+      background: linear-gradient(135deg, #123c2d 0%, #1f6048 68%, #2c745a 100%);
+      color: white;
+      box-shadow: var(--shadow);
+    }
+
+    .hero::after {
+      content: "26 — 29";
+      position: absolute;
+      right: -12px;
+      bottom: -58px;
+      color: rgba(255, 255, 255, .07);
+      font-size: clamp(8rem, 18vw, 17rem);
+      font-weight: 800;
+      letter-spacing: -.09em;
+      line-height: 1;
+      white-space: nowrap;
+      pointer-events: none;
+    }
+
+    .eyebrow {
+      position: relative;
+      z-index: 1;
+      margin: 0 0 14px;
+      color: #cde4d8;
+      font-size: .82rem;
+      font-weight: 750;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      position: relative;
+      z-index: 1;
+      max-width: 900px;
+      margin: 0;
+      font-size: clamp(2.1rem, 5vw, 4.8rem);
+      font-weight: 780;
+      letter-spacing: -.055em;
+      line-height: 1.08;
+    }
+
+    .hero-meta {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 28px;
+    }
+
+    .hero-meta span {
+      padding: 8px 13px;
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: 999px;
+      background: rgba(255,255,255,.08);
+      color: #eef8f2;
+      font-size: .9rem;
+      backdrop-filter: blur(6px);
+    }
+
+    .quick-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 24px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .quick-nav a {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 9px 13px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255,255,255,.78);
+      color: var(--ink);
+      font-size: .9rem;
+      font-weight: 650;
+      text-decoration: none;
+    }
+
+    .quick-nav a:hover {
+      border-color: #a8bbaf;
+      background: white;
+    }
+
+    .legend {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin: 28px 0;
+    }
+
+    .legend-item {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      min-height: 86px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: rgba(255,255,255,.72);
+    }
+
+    .legend-key {
+      flex: 0 0 auto;
+      min-width: 48px;
+      padding: 3px 8px;
+      border-radius: 7px;
+      background: var(--green-soft);
+      color: var(--green);
+      font-weight: 800;
+      text-align: center;
+    }
+
+    .legend-item strong { display: block; font-size: .94rem; }
+    .legend-item p { margin: 2px 0 0; color: var(--muted); font-size: .84rem; line-height: 1.5; }
+
+    section { scroll-margin-top: 24px; }
+
+    .section-heading {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 20px;
+      margin: 52px 0 18px;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: clamp(1.55rem, 3vw, 2.3rem);
+      letter-spacing: -.035em;
+      line-height: 1.25;
+    }
+
+    .section-heading p {
+      margin: 0;
+      color: var(--muted);
+      font-size: .92rem;
+    }
+
+    .timeline-panel {
+      overflow: hidden;
+      margin-bottom: 18px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+
+    .timeline-intro {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 18px 20px 15px;
+      border-bottom: 1px solid var(--line);
+      background: #f8faf8;
+    }
+
+    .timeline-intro strong {
+      font-size: .98rem;
+      letter-spacing: -.01em;
+    }
+
+    .timeline-legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      color: var(--muted);
+      font-size: .78rem;
+    }
+
+    .timeline-legend span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .timeline-legend i {
+      width: 10px;
+      height: 10px;
+      border-radius: 3px;
+      background: var(--green);
+    }
+
+    .timeline-legend .asia { background: #d58b5c; }
+    .timeline-legend .europe { background: #8f78c6; }
+    .timeline-legend .north-america { background: #5f92b8; }
+    .timeline-legend .south-america { background: #65a36e; }
+    .timeline-legend .middle-east { background: #c79b3d; }
+    .timeline-legend .oceania { background: #4f9e9a; }
+    .timeline-legend .africa { background: #c87851; }
+    .timeline-legend .unknown { background: #b4bbb6; }
+    .timeline-legend .past { background: #aeb5b0; }
+
+    .timeline-viewport {
+      overflow-x: auto;
+      padding: 0 18px 20px;
+    }
+
+    .timeline {
+      min-width: 1580px;
+    }
+
+    .timeline-axis,
+    .timeline-lane {
+      display: grid;
+      grid-template-columns: 86px minmax(0, 1fr);
+    }
+
+    .timeline-axis {
+      position: sticky;
+      top: 0;
+      z-index: 3;
+      min-height: 48px;
+      background: var(--surface);
+    }
+
+    .axis-spacer {
+      border-right: 2px solid var(--year-line);
+    }
+
+    .year-axis {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .year-axis span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-right: 2px solid var(--year-line);
+      color: var(--green);
+      font-size: .83rem;
+      font-weight: 800;
+      letter-spacing: .04em;
+    }
+
+    .year-axis span:last-child { border-right: 0; }
+
+    .timeline-group-title {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      margin: 10px 0 5px;
+      color: var(--ink);
+      font-size: .77rem;
+      font-weight: 800;
+      letter-spacing: .09em;
+      text-transform: uppercase;
+    }
+
+    .timeline-group-title::after {
+      content: "";
+      height: 1px;
+      flex: 1;
+      background: var(--line);
+    }
+
+    .timeline-lane { min-height: 58px; }
+
+    .lane-name {
+      display: flex;
+      align-items: center;
+      padding-right: 12px;
+      border-right: 2px solid var(--year-line);
+      color: var(--green);
+      font-size: .79rem;
+      font-weight: 820;
+    }
+
+    .timeline-group.cvml .lane-name { color: var(--blue); }
+
+    .timeline-track {
+      position: relative;
+      min-width: 0;
+      background: repeating-linear-gradient(to right, transparent 0 calc(25% - 2px), var(--year-line) calc(25% - 2px) 25%);
+    }
+
+    .timeline-track::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: calc(50% - 3px);
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #c4cec7;
+    }
+
+    .timeline-track::after {
+      content: "";
+      position: absolute;
+      z-index: 0;
+      left: 0;
+      right: 0;
+      top: calc(50% - 1px);
+      height: 3px;
+      border-radius: 999px;
+      background: var(--track-line);
+    }
+
+    .timeline-event {
+      position: absolute;
+      z-index: 1;
+      left: var(--x);
+      top: 50%;
+      width: clamp(96px, 12.5%, 150px);
+      min-height: 48px;
+      padding: 5px 8px;
+      transform: translate(var(--tx, -50%), -50%);
+      overflow: hidden;
+      border: 1px solid rgba(24, 78, 58, .22);
+      border-radius: 9px;
+      background: var(--green-soft);
+      color: var(--ink);
+      box-shadow: 0 3px 10px rgba(24, 78, 58, .07);
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    .timeline-group.cvml .timeline-event {
+      border-color: rgba(40, 90, 119, .22);
+      background: var(--blue-soft);
+    }
+
+    .timeline-group .timeline-event.asia { border-color: #dfad8c; background: #fff0e7; }
+    .timeline-group .timeline-event.europe { border-color: #b9aadd; background: #f2edff; }
+    .timeline-group .timeline-event.north-america { border-color: #9ebed5; background: #eaf4fb; }
+    .timeline-group .timeline-event.south-america { border-color: #9bc5a1; background: #eaf6eb; }
+    .timeline-group .timeline-event.middle-east { border-color: #d9bd77; background: #fff5dc; }
+    .timeline-group .timeline-event.oceania { border-color: #8cc5c1; background: #e6f6f5; }
+    .timeline-group .timeline-event.africa { border-color: #d5a17f; background: #fbeadf; }
+
+    .timeline-group .timeline-event.unknown {
+      border-style: dashed;
+      background: #f5f7f6;
+      color: var(--muted);
+      box-shadow: none;
+    }
+
+    .timeline-group .timeline-event.past {
+      border-color: #c3c9c5;
+      background: #e1e4e2;
+      color: #68716b;
+      box-shadow: none;
+    }
+
+    .timeline-event.edge { width: 150px; }
+
+    .event-place {
+      display: block;
+      overflow: hidden;
+      font-size: .72rem;
+      font-weight: 780;
+      line-height: 1.2;
+      text-overflow: ellipsis;
+    }
+
+    .event-place > span { display: block; }
+
+    .event-date {
+      display: block;
+      margin-top: 2px;
+      color: var(--muted);
+      font-size: .65rem;
+      font-weight: 650;
+      line-height: 1.15;
+    }
+
+    .timeline-note {
+      margin: 10px 0 0 86px;
+      color: var(--muted);
+      font-size: .75rem;
+    }
+
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 14px;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: rgba(255,255,255,.72);
+    }
+
+    .control-group {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .control-label {
+      margin: 0 3px 0 2px;
+      color: var(--muted);
+      font-size: .78rem;
+      font-weight: 750;
+      letter-spacing: .04em;
+    }
+
+    button {
+      appearance: none;
+      padding: 7px 11px;
+      border: 1px solid #cfd8d2;
+      border-radius: 9px;
+      background: white;
+      color: var(--ink);
+      font: inherit;
+      font-size: .82rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    button:hover { border-color: #8da597; }
+    button[aria-pressed="true"] {
+      border-color: var(--green);
+      background: var(--green);
+      color: white;
+    }
+
+    .table-shell {
+      position: relative;
+      overflow: auto;
+      max-height: 74vh;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: .9rem;
+    }
+
+    th, td {
+      padding: 17px 16px;
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+      text-align: left;
+    }
+
+    th:last-child, td:last-child { border-right: 0; }
+    tbody tr:last-child td { border-bottom: 0; }
+
+    thead th {
+      position: sticky;
+      top: 0;
+      z-index: 3;
+      background: #f3f6f3;
+      color: #35423b;
+      font-size: .79rem;
+      font-weight: 780;
+      letter-spacing: .035em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    thead th:first-child,
+    tbody td:first-child {
+      position: sticky;
+      left: 0;
+      z-index: 2;
+    }
+
+    thead th:first-child { z-index: 4; }
+    tbody td:first-child { background: #fbfcfb; }
+    tbody tr:nth-child(even) td { background-color: #fcfdfc; }
+    tbody tr:nth-child(even) td:first-child { background-color: #f8faf8; }
+    tbody tr:hover td { background-color: #f4f9f6; }
+
+    th:nth-child(1) { min-width: 145px; }
+    th:nth-child(2) { min-width: 84px; }
+    th:nth-child(n+3) { min-width: 235px; }
+
+    .field {
+      color: var(--muted);
+      font-size: .82rem;
+      font-weight: 650;
+    }
+
+    .conf {
+      color: var(--green);
+      font-size: 1rem;
+      font-weight: 820;
+      letter-spacing: .01em;
+    }
+
+    .place {
+      display: block;
+      margin-bottom: 2px;
+      color: var(--ink);
+      font-weight: 760;
+    }
+
+    .venue, .date, .note {
+      display: block;
+      color: var(--muted);
+      font-size: .82rem;
+      line-height: 1.55;
+    }
+
+    .date { color: var(--blue); font-weight: 680; }
+    .note { font-style: italic; }
+
+    .status {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 8px;
+      border-radius: 999px;
+      font-size: .76rem;
+      font-weight: 800;
+    }
+
+    .status.tba { background: var(--amber-soft); color: var(--amber); }
+    .status.region { background: var(--blue-soft); color: var(--blue); }
+    .status.none { background: #f0f1f0; color: #7a827d; }
+
+    .year-highlight { background-color: #eff7f2 !important; }
+    thead .year-highlight { background: #dcebe2 !important; color: var(--green); }
+    tr.is-hidden { display: none; }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--surface);
+      box-shadow: 0 10px 30px rgba(26, 46, 36, .05);
+    }
+
+    .card h3 {
+      margin: 0 0 9px;
+      color: var(--green);
+      font-size: 1.06rem;
+    }
+
+    .card p { margin: 0; color: #3e4b44; font-size: .9rem; }
+
+    .evidence {
+      columns: 2 360px;
+      column-gap: 32px;
+      margin: 0;
+      padding-left: 1.3rem;
+    }
+
+    .evidence li {
+      break-inside: avoid;
+      margin: 0 0 16px;
+      padding-left: 4px;
+      color: #38463f;
+      font-size: .91rem;
+    }
+
+    .evidence a { font-weight: 700; }
+
+    .confirmed {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .year-card {
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--surface);
+    }
+
+    .year-card .year {
+      display: block;
+      margin-bottom: 12px;
+      color: var(--green);
+      font-size: 1.8rem;
+      font-weight: 840;
+      letter-spacing: -.04em;
+    }
+
+    .year-card p { margin: 0; color: #445048; font-size: .9rem; }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      margin-top: 52px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: .8rem;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    @media (max-width: 900px) {
+      .page { width: min(100% - 24px, 1480px); padding-top: 20px; }
+      .hero { border-radius: 22px; }
+      .legend, .cards, .confirmed { grid-template-columns: 1fr; }
+      .legend-item { min-height: 0; }
+      .section-heading { align-items: flex-start; flex-direction: column; gap: 6px; }
+      footer { flex-direction: column; }
+    }
+
+    @media (max-width: 560px) {
+      .page { width: min(100% - 16px, 1480px); }
+      .hero { padding: 30px 23px; }
+      .quick-nav { display: none; }
+      .timeline-viewport { padding-inline: 10px; }
+      .table-shell { border-radius: 14px; }
+      th, td { padding: 14px 12px; }
+    }
+
+    @media print {
+      @page { size: A3 landscape; margin: 12mm; }
+      body { background: white; color: black; font-size: 9pt; }
+      .page { width: 100%; padding: 0; }
+      .hero {
+        padding: 16px 20px;
+        border-radius: 0;
+        background: white;
+        color: black;
+        box-shadow: none;
+      }
+      .hero::after, .eyebrow, .quick-nav, .controls { display: none; }
+      h1 { font-size: 24pt; }
+      .hero-meta { margin-top: 8px; }
+      .hero-meta span { padding: 0; border: 0; color: #444; }
+      .legend { margin: 12px 0; }
+      .legend-item { min-height: 0; padding: 8px; }
+      .section-heading { margin: 18px 0 8px; }
+      h2 { font-size: 16pt; }
+      .timeline-panel { border-radius: 0; box-shadow: none; break-inside: avoid; }
+      .timeline-intro { padding: 8px; }
+      .timeline-viewport { overflow: visible; padding: 0 8px 8px; }
+      .timeline { min-width: 0; }
+      .timeline-lane { min-height: 44px; }
+      .timeline-event { min-height: 40px; padding: 2px 5px; box-shadow: none; }
+      .table-shell { overflow: visible; max-height: none; border-radius: 0; box-shadow: none; }
+      table { font-size: 7.2pt; }
+      th, td { padding: 7px; }
+      thead th, thead th:first-child, tbody td:first-child { position: static; }
+      th:nth-child(1) { min-width: 0; }
+      th:nth-child(2) { min-width: 0; }
+      th:nth-child(n+3) { min-width: 0; }
+      .cards, .confirmed { gap: 8px; }
+      .card, .year-card { padding: 10px; break-inside: avoid; box-shadow: none; }
+      a { color: black; text-decoration: none; }
+      footer { margin-top: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <p class="eyebrow">Conference Location Index</p>
+      <h1>2026–2029<br>주요 학회 개최지 통합표</h1>
+      <div class="hero-meta" aria-label="문서 정보">
+        <span>기준일 · 2026년 7월 18일</span>
+        <span>Robotics · Vision · ML · AI</span>
+        <span>14개 주요 학회</span>
+      </div>
+    </header>
+
+    <nav aria-label="페이지 바로가기">
+      <ul class="quick-nav">
+        <li><a href="#schedule">전체 일정</a></li>
+      </ul>
+    </nav>
+
+    <aside class="legend" aria-label="표기 안내">
+      <div class="legend-item">
+        <span class="legend-key">TBA</span>
+        <div><strong>도시 미공개</strong><p>개최 도시가 아직 공개되지 않은 상태</p></div>
+      </div>
+      <div class="legend-item">
+        <span class="legend-key">권역</span>
+        <div><strong>권역만 공개</strong><p>구체적인 도시 없이 대륙·지역만 공개된 상태</p></div>
+      </div>
+      <div class="legend-item">
+        <span class="legend-key">—</span>
+        <div><strong>해당 연도 미개최</strong><p>격년제 학회라 해당 연도에는 개최되지 않음</p></div>
+      </div>
+    </aside>
+
+    <section id="schedule" aria-labelledby="schedule-title">
+      <div class="section-heading">
+        <h2 id="schedule-title">전체 일정</h2>
+      </div>
+
+      <figure class="timeline-panel" aria-labelledby="timeline-title">
+        <figcaption class="timeline-intro">
+          <strong id="timeline-title">2026–2029 학회 타임라인</strong>
+          <span class="timeline-legend" aria-label="분야 범례">
+            <span><i class="asia" aria-hidden="true"></i> 아시아</span>
+            <span><i class="europe" aria-hidden="true"></i> 유럽</span>
+            <span><i class="north-america" aria-hidden="true"></i> 북미</span>
+            <span><i class="south-america" aria-hidden="true"></i> 남미</span>
+            <span><i class="middle-east" aria-hidden="true"></i> 중동</span>
+            <span><i class="oceania" aria-hidden="true"></i> 오세아니아</span>
+            <span><i class="africa" aria-hidden="true"></i> 아프리카</span>
+            <span><i class="unknown" aria-hidden="true"></i> 지역 미정</span>
+            <span><i class="past" aria-hidden="true"></i> 종료 · 7/18 기준</span>
+          </span>
+        </figcaption>
+        <div class="timeline-viewport">
+          <div class="timeline">
+            <div class="timeline-axis" aria-hidden="true">
+              <span class="axis-spacer"></span>
+              <div class="year-axis">
+                <span>2026</span><span>2027</span><span>2028</span><span>2029</span>
+              </div>
+            </div>
+
+            <div class="timeline-group robotics" aria-label="Robotics 학회 타임라인">
+              <div class="timeline-group-title">Robotics · Robot Learning · Control</div>
+
+              <div class="timeline-lane">
+                <div class="lane-name">ICRA</div>
+                <div class="timeline-track">
+                  <span class="timeline-event europe past" style="--x:11.5%;--w:17%" aria-label="ICRA 2026 Vienna, Austria, 6월 1일부터 5일, 기준일 이전 종료"><span class="event-place"><span>Vienna</span><span>(Austria)</span></span><span class="event-date">6/1–5</span></span>
+                  <span class="timeline-event asia" style="--x:36.5%;--w:17%" aria-label="ICRA 2027 Seoul, Korea, 5월 24일부터 28일"><span class="event-place"><span>Seoul</span><span>(Korea)</span></span><span class="event-date">5/24–28</span></span>
+                  <span class="timeline-event unknown" style="--x:61.5%" aria-label="ICRA 2028, 예년 기준 5월에서 6월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 5–6월경</span></span>
+                  <span class="timeline-event europe" style="--x:86.5%;--w:17%" aria-label="ICRA 2029 Milan, Italy, 5월 7일부터 12일"><span class="event-place"><span>Milan</span><span>(Italy)</span></span><span class="event-date">5/7–12</span></span>
+                </div>
+              </div>
+
+              <div class="timeline-lane">
+                <div class="lane-name">IROS</div>
+                <div class="timeline-track">
+                  <span class="timeline-event north-america" style="--x:19.5%;--w:18%" aria-label="IROS 2026 Pittsburgh, USA, 9월 27일부터 10월 1일"><span class="event-place"><span>Pittsburgh</span><span>(USA)</span></span><span class="event-date">9/27–10/1</span></span>
+                  <span class="timeline-event europe" style="--x:44.5%;--w:18%" aria-label="IROS 2027 Florence, Italy, 9월 26일부터 10월 1일"><span class="event-place"><span>Florence</span><span>(Italy)</span></span><span class="event-date">9/26–10/1</span></span>
+                  <span class="timeline-event oceania" style="--x:70.5%;--w:18%" aria-label="IROS 2028 Sydney, Australia, 10월 2일부터 6일"><span class="event-place"><span>Sydney</span><span>(Australia)</span></span><span class="event-date">10/2–6</span></span>
+                  <span class="timeline-event unknown edge" style="--x:95.5%" aria-label="IROS 2029, 예년 기준 9월에서 10월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 9–10월경</span></span>
+                </div>
+              </div>
+
+              <div class="timeline-lane">
+                <div class="lane-name">RSS</div>
+                <div class="timeline-track">
+                  <span class="timeline-event oceania past" style="--x:14%;--w:17%" aria-label="RSS 2026 Sydney, Australia, 7월 13일부터 17일, 기준일 이전 종료"><span class="event-place"><span>Sydney</span><span>(Australia)</span></span><span class="event-date">7/13–17</span></span>
+                  <span class="timeline-event europe" style="--x:37.5%;--w:17%" aria-label="RSS 2027 Athens, Greece, 날짜 미공개"><span class="event-place"><span>Athens</span><span>(Greece)</span></span><span class="event-date">날짜 미공개</span></span>
+                  <span class="timeline-event unknown" style="--x:64%" aria-label="RSS 2028, 예년 기준 7월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 7월경</span></span>
+                  <span class="timeline-event unknown" style="--x:89%" aria-label="RSS 2029, 예년 기준 7월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 7월경</span></span>
+                </div>
+              </div>
+
+              <div class="timeline-lane">
+                <div class="lane-name">CoRL</div>
+                <div class="timeline-track">
+                  <span class="timeline-event north-america" style="--x:22%;--w:17%" aria-label="CoRL 2026 Austin, USA, 11월 9일부터 12일"><span class="event-place"><span>Austin</span><span>(USA)</span></span><span class="event-date">11/9–12</span></span>
+                  <span class="timeline-event unknown" style="--x:47%" aria-label="CoRL 2027, 예년 기준 11월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 11월경</span></span>
+                  <span class="timeline-event unknown" style="--x:72%" aria-label="CoRL 2028, 예년 기준 11월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 11월경</span></span>
+                  <span class="timeline-event unknown edge" style="--x:96%" aria-label="CoRL 2029, 예년 기준 11월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 11월경</span></span>
+                </div>
+              </div>
+
+              <div class="timeline-lane">
+                <div class="lane-name">UR</div>
+                <div class="timeline-track">
+                  <span class="timeline-event asia" style="--x:14%;--w:17%" aria-label="UR 2026 Ibaraki, Osaka, Japan, 7월 15일부터 18일"><span class="event-place"><span>Ibaraki, Osaka</span><span>(Japan)</span></span><span class="event-date">7/15–18</span></span>
+                  <span class="timeline-event unknown" style="--x:39%" aria-label="UR 2027, 예년 기준 7월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 7월경</span></span>
+                  <span class="timeline-event unknown" style="--x:64%" aria-label="UR 2028, 예년 기준 7월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 7월경</span></span>
+                  <span class="timeline-event unknown" style="--x:89%" aria-label="UR 2029, 예년 기준 7월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 7월경</span></span>
+                </div>
+              </div>
+
+              <div class="timeline-lane">
+                <div class="lane-name">ICCAS</div>
+                <div class="timeline-track">
+                  <span class="timeline-event asia" style="--x:20.5%;--w:17%" aria-label="ICCAS 2026 Sapporo, Japan, 10월 27일부터 30일"><span class="event-place"><span>Sapporo</span><span>(Japan)</span></span><span class="event-date">10/27–30</span></span>
+                  <span class="timeline-event unknown" style="--x:45.5%" aria-label="ICCAS 2027, 예년 기준 10월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 10월경</span></span>
+                  <span class="timeline-event unknown" style="--x:70.5%" aria-label="ICCAS 2028, 예년 기준 10월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 10월경</span></span>
+                  <span class="timeline-event unknown edge" style="--x:95.5%" aria-label="ICCAS 2029, 예년 기준 10월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 10월경</span></span>
+                </div>
+              </div>
+
+              <div class="timeline-lane">
+                <div class="lane-name">iSpaRo</div>
+                <div class="timeline-track">
+                  <span class="timeline-event europe" style="--x:22%;--w:17%" aria-label="iSpaRo 2026 Cologne, Germany, 11월 3일부터 6일"><span class="event-place"><span>Cologne</span><span>(Germany)</span></span><span class="event-date">11/3–6</span></span>
+                  <span class="timeline-event unknown" style="--x:47%" aria-label="iSpaRo 2027, 예년 기준 11월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 11월경</span></span>
+                  <span class="timeline-event unknown" style="--x:72%" aria-label="iSpaRo 2028, 예년 기준 11월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 11월경</span></span>
+                  <span class="timeline-event unknown edge" style="--x:96%" aria-label="iSpaRo 2029, 예년 기준 11월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 11월경</span></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-group cvml" aria-label="Computer Vision, Machine Learning, AI 학회 타임라인">
+              <div class="timeline-group-title">Computer Vision · Machine Learning · AI</div>
+
+              <div class="timeline-lane">
+                <div class="lane-name">CVPR</div>
+                <div class="timeline-track">
+                  <span class="timeline-event north-america past" style="--x:11.5%;--w:17%" aria-label="CVPR 2026 Denver, USA, 6월 3일부터 7일, 기준일 이전 종료"><span class="event-place"><span>Denver</span><span>(USA)</span></span><span class="event-date">6/3–7</span></span>
+                  <span class="timeline-event north-america" style="--x:36.5%;--w:17%" aria-label="CVPR 2027 Seattle, USA, 6월 20일부터 24일"><span class="event-place"><span>Seattle</span><span>(USA)</span></span><span class="event-date">6/20–24*</span></span>
+                  <span class="timeline-event north-america" style="--x:62.5%;--w:18%" aria-label="CVPR 2028 San Antonio, USA, 날짜 미공개"><span class="event-place"><span>San Antonio</span><span>(USA)</span></span><span class="event-date">날짜 미공개</span></span>
+                  <span class="timeline-event north-america" style="--x:87.5%;--w:18%" aria-label="CVPR 2029 Los Angeles, USA, 날짜 미공개"><span class="event-place"><span>Los Angeles</span><span>(USA)</span></span><span class="event-date">날짜 미공개</span></span>
+                </div>
+              </div>
+
+              <div class="timeline-lane">
+                <div class="lane-name">ICCV</div>
+                <div class="timeline-track">
+                  <span class="timeline-event asia" style="--x:45.5%;--w:17%" aria-label="ICCV 2027 Hong Kong, China, 10월 2일부터 8일"><span class="event-place"><span>Hong Kong</span><span>(China)</span></span><span class="event-date">10/2–8</span></span>
+                  <span class="timeline-event middle-east" style="--x:87.5%;--w:18%" aria-label="ICCV 2029 Dubai, UAE, 날짜 미공개"><span class="event-place"><span>Dubai</span><span>(UAE)</span></span><span class="event-date">날짜 미공개</span></span>
+                </div>
+              </div>
+
+              <div class="timeline-lane">
+                <div class="lane-name">ECCV</div>
+                <div class="timeline-track">
+                  <span class="timeline-event europe" style="--x:18%;--w:17%" aria-label="ECCV 2026 Malmö, Sweden, 9월 8일부터 12일"><span class="event-place"><span>Malmö</span><span>(Sweden)</span></span><span class="event-date">9/8–12</span></span>
+                  <span class="timeline-event unknown" style="--x:68%" aria-label="ECCV 2028, 예년 기준 9월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 9월경</span></span>
+                </div>
+              </div>
+
+              <div class="timeline-lane">
+                <div class="lane-name">ICLR</div>
+                <div class="timeline-track">
+                  <span class="timeline-event south-america past" style="--x:8%;--w:19%" aria-label="ICLR 2026 Rio de Janeiro, Brazil, 4월 23일부터 27일, 기준일 이전 종료"><span class="event-place"><span>Rio de Janeiro</span><span>(Brazil)</span></span><span class="event-date">4/23–27</span></span>
+                  <span class="timeline-event north-america" style="--x:37.5%;--w:19%" aria-label="ICLR 2027 북미 서부, 도시와 날짜 미공개"><span class="event-place">북미 서부</span><span class="event-date">도시 · 날짜 미공개</span></span>
+                  <span class="timeline-event unknown" style="--x:58%" aria-label="ICLR 2028, 예년 기준 4월에서 5월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 4–5월경</span></span>
+                  <span class="timeline-event unknown" style="--x:83%" aria-label="ICLR 2029, 예년 기준 4월에서 5월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 4–5월경</span></span>
+                </div>
+              </div>
+
+              <div class="timeline-lane">
+                <div class="lane-name">ICML</div>
+                <div class="timeline-track">
+                  <span class="timeline-event asia past" style="--x:14%;--w:17%" aria-label="ICML 2026 Seoul, Korea, 7월 6일부터 11일, 기준일 이전 종료"><span class="event-place"><span>Seoul</span><span>(Korea)</span></span><span class="event-date">7/6–11</span></span>
+                  <span class="timeline-event unknown" style="--x:39%" aria-label="ICML 2027, 예년 기준 7월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 7월경</span></span>
+                  <span class="timeline-event north-america" style="--x:62.5%;--w:19%" aria-label="ICML 2028 미국 동부, 도시와 날짜 미공개"><span class="event-place">미국 동부</span><span class="event-date">도시 · 날짜 미공개</span></span>
+                  <span class="timeline-event unknown" style="--x:89%" aria-label="ICML 2029, 예년 기준 7월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 7월경</span></span>
+                </div>
+              </div>
+
+              <div class="timeline-lane">
+                <div class="lane-name">NeurIPS</div>
+                <div class="timeline-track">
+                  <span class="timeline-event oceania" style="--x:24%;--w:17%" aria-label="NeurIPS 2026 Sydney, Australia, 12월 6일부터 12일"><span class="event-place"><span>Sydney</span><span>(Australia)</span></span><span class="event-date">12/6–12</span></span>
+                  <span class="timeline-event europe" style="--x:37.5%;--w:18%" aria-label="NeurIPS 2027 Europe, 도시와 날짜 미공개"><span class="event-place">Europe</span><span class="event-date">도시 · 날짜 미공개</span></span>
+                  <span class="timeline-event north-america" style="--x:62.5%;--w:19%" aria-label="NeurIPS 2028 Western United States, 도시와 날짜 미공개"><span class="event-place">Western US</span><span class="event-date">도시 · 날짜 미공개</span></span>
+                  <span class="timeline-event unknown edge" style="--x:99%" aria-label="NeurIPS 2029, 예년 기준 12월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 12월경</span></span>
+                </div>
+              </div>
+
+              <div class="timeline-lane">
+                <div class="lane-name">AAAI</div>
+                <div class="timeline-track">
+                  <span class="timeline-event asia past" style="--x:2.5%;--w:17%" aria-label="AAAI 2026 Singapore, Singapore, 1월 20일부터 27일, 기준일 이전 종료"><span class="event-place"><span>Singapore</span><span>(Singapore)</span></span><span class="event-date">1/20–27</span></span>
+                  <span class="timeline-event north-america" style="--x:28.5%;--w:18%" aria-label="AAAI 2027 Montréal, Canada, 2월 16일부터 23일"><span class="event-place"><span>Montréal</span><span>(Canada)</span></span><span class="event-date">2/16–23</span></span>
+                  <span class="timeline-event unknown" style="--x:53.5%" aria-label="AAAI 2028, 예년 기준 1월에서 2월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 1–2월경</span></span>
+                  <span class="timeline-event unknown" style="--x:78.5%" aria-label="AAAI 2029, 예년 기준 1월에서 2월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 1–2월경</span></span>
+                </div>
+              </div>
+            </div>
+
+            <p class="timeline-note">도시 또는 권역이 공개된 일정과 ICRA · CoRL · ECCV의 TBA 일정 표시 · TBA의 월 위치는 예년 개최 시기를 기준으로 추정</p>
+          </div>
+        </div>
+      </figure>
+
+    </section>
+
+    <footer>
+      <span>기준일 이후 일정과 venue는 변경될 수 있으므로 출장 예약 전 공식 사이트를 다시 확인하세요.</span>
+      <span>Last reviewed · 2026.07.18</span>
+    </footer>
+  </main>
+
+  <script>
+    (() => {
+      const timeline = document.querySelector(".timeline");
+      if (!timeline) return;
+
+      const clampEventsToYears = () => {
+        timeline.querySelectorAll(".timeline-event").forEach((event) => {
+          const track = event.parentElement;
+          const trackWidth = track.clientWidth;
+          const eventWidth = event.offsetWidth;
+          const rawPosition = Number.parseFloat(getComputedStyle(event).getPropertyValue("--x"));
+          if (!trackWidth || !eventWidth || !Number.isFinite(rawPosition)) return;
+
+          const yearIndex = Math.min(3, Math.max(0, Math.floor(rawPosition / 25)));
+          const yearWidth = trackWidth / 4;
+          const inset = 8;
+          const minimum = yearIndex * yearWidth + eventWidth / 2 + inset;
+          const maximum = (yearIndex + 1) * yearWidth - eventWidth / 2 - inset;
+          const desired = rawPosition / 100 * trackWidth;
+          event.style.left = `${minimum <= maximum ? Math.max(minimum, Math.min(maximum, desired)) : (yearIndex + .5) * yearWidth}px`;
+        });
+      };
+
+      requestAnimationFrame(clampEventsToYears);
+      window.addEventListener("resize", clampEventsToYears, { passive: true });
+    })();
+  </script>
+
+</body>
+</html>
