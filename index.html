@@ -259,6 +259,16 @@
     .timeline-viewport {
       overflow-x: auto;
       padding: 0 18px 20px;
+      cursor: grab;
+    }
+
+    .timeline-viewport.is-dragging {
+      cursor: grabbing;
+      user-select: none;
+    }
+
+    .timeline-viewport.is-dragging * {
+      cursor: grabbing;
     }
 
     .timeline {
@@ -1102,7 +1112,8 @@
   <script>
     (() => {
       const timeline = document.querySelector(".timeline");
-      if (!timeline) return;
+      const viewport = document.querySelector(".timeline-viewport");
+      if (!timeline || !viewport) return;
 
       const clampEventsToYears = () => {
         timeline.querySelectorAll(".timeline-event").forEach((event) => {
@@ -1124,6 +1135,52 @@
 
       requestAnimationFrame(clampEventsToYears);
       window.addEventListener("resize", clampEventsToYears, { passive: true });
+
+      let pointerId = null;
+      let startX = 0;
+      let startScrollLeft = 0;
+      let isDragging = false;
+      let suppressClick = false;
+
+      const endDrag = (event) => {
+        if (event.pointerId !== pointerId) return;
+        if (viewport.hasPointerCapture(pointerId)) viewport.releasePointerCapture(pointerId);
+        pointerId = null;
+        viewport.classList.remove("is-dragging");
+        if (!isDragging) return;
+        suppressClick = true;
+        window.setTimeout(() => { suppressClick = false; }, 0);
+        isDragging = false;
+      };
+
+      viewport.addEventListener("pointerdown", (event) => {
+        if (event.pointerType !== "mouse" || event.button !== 0) return;
+        pointerId = event.pointerId;
+        startX = event.clientX;
+        startScrollLeft = viewport.scrollLeft;
+        isDragging = false;
+        viewport.setPointerCapture(pointerId);
+      });
+
+      viewport.addEventListener("pointermove", (event) => {
+        if (event.pointerId !== pointerId) return;
+        const distance = event.clientX - startX;
+        if (!isDragging && Math.abs(distance) > 3) {
+          isDragging = true;
+          viewport.classList.add("is-dragging");
+        }
+        if (!isDragging) return;
+        viewport.scrollLeft = startScrollLeft - distance;
+        event.preventDefault();
+      });
+
+      viewport.addEventListener("pointerup", endDrag);
+      viewport.addEventListener("pointercancel", endDrag);
+      viewport.addEventListener("click", (event) => {
+        if (!suppressClick) return;
+        event.preventDefault();
+        event.stopPropagation();
+      }, true);
     })();
   </script>
 
