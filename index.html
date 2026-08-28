@@ -76,6 +76,30 @@
       pointer-events: none;
     }
 
+    .hero-link {
+      position: absolute;
+      z-index: 2;
+      top: clamp(24px, 4vw, 48px);
+      right: clamp(24px, 4vw, 48px);
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 15px;
+      border: 1px solid rgba(255, 255, 255, .5);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, .14);
+      color: white;
+      font-size: .9rem;
+      font-weight: 750;
+      text-decoration: none;
+      backdrop-filter: blur(8px);
+    }
+
+    .hero-link:hover {
+      border-color: white;
+      background: white;
+      color: var(--green);
+    }
+
     .eyebrow {
       position: relative;
       z-index: 1;
@@ -761,6 +785,7 @@
     @media (max-width: 900px) {
       .page { width: min(100% - 24px, 1480px); padding-top: 20px; }
       .hero { border-radius: 22px; }
+      .hero-link { position: relative; top: auto; right: auto; margin-bottom: 22px; }
       .legend, .cards, .confirmed { grid-template-columns: 1fr; }
       .legend-item { min-height: 0; }
       .section-heading { align-items: flex-start; flex-direction: column; gap: 6px; }
@@ -787,7 +812,7 @@
         color: black;
         box-shadow: none;
       }
-      .hero::after, .eyebrow, .quick-nav, .controls { display: none; }
+      .hero::after, .hero-link, .eyebrow, .quick-nav, .controls { display: none; }
       h1 { font-size: 24pt; }
       .hero-meta { margin-top: 8px; }
       .hero-meta span { padding: 0; border: 0; color: #444; }
@@ -818,6 +843,7 @@
 <body>
   <main class="page">
     <header class="hero">
+      <a class="hero-link" href="https://gisbi-kim.github.io/conference-explorers/" target="_blank" rel="noopener noreferrer">2026 Conference Explorers ↗</a>
       <p class="eyebrow">Conference Location Index</p>
       <h1>2026–2029<br>주요 학회 개최지 통합표</h1>
       <div class="hero-meta" aria-label="문서 정보">
