@@ -29,3 +29,7 @@ https://gisbi-kim.github.io/conference-timeline-2026-2029/
 - [ECCV 2026](https://eccv.ecva.net/Conferences/2026/Venues), [3DV 2027](https://3dvconf.github.io/2027/), ICRA 2026, iSpaRo 2026, ITSC 2026, ICCAS 2026, SIGGRAPH Asia 2026, ICLR 2026, ICML 2026의 공식 행사장 정보 보완.
 
 ICLR 2027은 공식 본문이 여전히 California 및 venue 미공개로 안내하므로 도시·행사장을 추정하지 않았습니다. 이미지 대체 텍스트만으로 개최지를 확정하지 않습니다.
+
+## 2026-09-13 ICRA 2028 개최지 갱신
+
+사이트 관리자가 전달한 개최지 변경 소식에 따라 ICRA 2028을 Rio de Janeiro, Brazil로 수정하고 남미 색상을 적용했습니다. 이전 행사장 Expo Guadalajara 표시는 삭제했습니다. 공개 IEEE 행사 페이지에는 아직 이전 개최지가 표시되어 있으며, 날짜는 기존 2028-05-15–19를 유지했습니다.
