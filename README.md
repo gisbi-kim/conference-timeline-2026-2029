@@ -40,6 +40,7 @@ ICLR 2027은 공식 본문이 여전히 California 및 venue 미공개로 안내
 - [IFAC World Congress 2029](https://ifac-control.org/conferences/24th-ifac-world-congress/): Amsterdam, Netherlands, 2029-07-08–13, Amsterdam RAI Convention Centre. [2026 부산](https://ifac-control.org/conferences/23rd-ifac-world-congress-in-busan/), 8/23–28, BEXCO도 추가했습니다. World Congress는 3년 주기이므로 2027·2028에는 해당 행사가 없습니다.
 - [ICML 2027](https://icml.cc/Conferences/2027): Rio de Janeiro, Brazil, 2027-07-31–08-06, Riocentro. 7/31 Expo부터 8/5–6 Workshops까지의 전체 일정입니다.
 - CoRL 2026, iSpaRo 2026, ICCAS 2026을 종료 표시로 갱신했습니다.
+- 11/16 이전에 끝난 모든 행사는 회색 배경과 날짜 앞 `종료 ·` 문구로 표시합니다. 종료 상태는 위 기준일의 스냅샷이며 자동 갱신하지 않습니다.
 - 총 27개 학회, 28개 행(OCEANS 권역별 2행), 104개 일정입니다. 다른 항목은 이전 확인 내용을 유지합니다.
 
 ## 구조 및 확인 방법
