@@ -4,10 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
-  <meta name="description" content="2026–2029 로보틱스, 컴퓨터 비전, 머신러닝 및 인공지능 주요 학회 개최지 통합표">
-  <title>2026–2029 주요 학회 개최지 통합표</title>
+  <meta name="description" content="2026–2030 로보틱스, 컴퓨터 비전, 머신러닝 및 인공지능 주요 학회 개최지 통합표">
+  <title>2026–2030 주요 학회 개최지 통합표</title>
   <style>
     :root {
+      --timeline-years: 5;
       --ink: #18221d;
       --muted: #5c6962;
       --paper: #fbfaf6;
@@ -63,7 +64,7 @@
     }
 
     .hero::after {
-      content: "26 — 29";
+      content: "26 — 30";
       position: absolute;
       right: -12px;
       bottom: -58px;
@@ -296,7 +297,7 @@
     }
 
     .timeline {
-      min-width: 1580px;
+      min-width: 1950px;
     }
 
     .timeline-axis,
@@ -319,7 +320,7 @@
 
     .year-axis {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(var(--timeline-years), 1fr);
     }
 
     .year-axis span {
@@ -409,7 +410,7 @@
     .timeline-track {
       position: relative;
       min-width: 0;
-      background: repeating-linear-gradient(to right, transparent 0 calc(25% - 2px), var(--year-line) calc(25% - 2px) 25%);
+      background: repeating-linear-gradient(to right, transparent 0 calc(100% / var(--timeline-years) - 2px), var(--year-line) calc(100% / var(--timeline-years) - 2px) calc(100% / var(--timeline-years)));
     }
 
     .timeline-lane.main-conference .timeline-track {
@@ -448,7 +449,7 @@
       z-index: 1;
       left: var(--x);
       top: 50%;
-      width: clamp(96px, 12.5%, 150px);
+      width: clamp(96px, 10%, 150px);
       min-height: 48px;
       padding: 5px 8px;
       transform: translate(var(--tx, -50%), -50%);
@@ -854,7 +855,7 @@
     <header class="hero">
       <a class="hero-link" href="https://gisbi-kim.github.io/conference-explorers/" target="_blank" rel="noopener noreferrer">2026 Conference Explorers ↗</a>
       <p class="eyebrow">Conference Location Index</p>
-      <h1>2026–2029<br>주요 학회 개최지 통합표</h1>
+      <h1>2026–2030<br>주요 학회 개최지 통합표</h1>
       <div class="hero-meta" aria-label="문서 정보">
         <span>업데이트 · 2026년 11월 16일</span>
         <span>Robotics · Vision · ML · AI</span>
@@ -890,7 +891,7 @@
 
       <figure class="timeline-panel" aria-labelledby="timeline-title">
         <figcaption class="timeline-intro">
-          <strong id="timeline-title">2026–2029 학회 타임라인</strong>
+          <strong id="timeline-title">2026–2030 학회 타임라인</strong>
           <span class="timeline-legend" aria-label="분야 범례">
             <span><i class="asia" aria-hidden="true"></i> 아시아</span>
             <span><i class="europe" aria-hidden="true"></i> 유럽</span>
@@ -908,7 +909,7 @@
             <div class="timeline-axis" aria-hidden="true">
               <span class="axis-spacer"></span>
               <div class="year-axis">
-                <span>2026</span><span>2027</span><span>2028</span><span>2029</span>
+                <span>2026</span><span>2027</span><span>2028</span><span>2029</span><span>2030</span>
               </div>
             </div>
 
@@ -918,50 +919,55 @@
               <div class="timeline-lane main-conference">
                 <div class="lane-name">ICRA <span class="main-conference-badge">MAIN</span></div>
                 <div class="timeline-track">
-                  <a href="https://2026.ieee-icra.org/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event europe past" style="--x:11.5%;--w:17%" aria-label="ICRA 2026 Vienna, Austria, 6월 1일부터 5일, 기준일 이전 종료, VIECON / Messe Wien" title="Venue: VIECON / Messe Wien"><span class="event-place"><span>Vienna</span><span>(Austria)</span></span><span class="event-date">6/1–5</span><span class="event-venue">VIECON / Messe Wien</span></a>
-                  <a href="https://2027.ieee-icra.org/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event asia" style="--x:36.5%;--w:17%" aria-label="ICRA 2027 Seoul, Korea, COEX, 5월 24일부터 28일" title="Venue: COEX"><span class="event-place"><span>Seoul</span><span>(Korea)</span></span><span class="event-date">5/24–28</span><span class="event-venue">COEX</span></a>
-                  <a href="https://www.ieee-ras.org/events/tag/additive-manufacturing-aerial-robotics-agent-based-systems-agricultural-automation-ai-reasoning-methods-assembly-automation-at-micro-nano-scales-automation-in-life-sciences-biotechnology/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event south-america" style="--x:61%;--w:17%" aria-label="ICRA 2028 Rio de Janeiro, Brazil, 5월 15일부터 19일"><span class="event-place"><span>Rio de Janeiro</span><span>(Brazil)</span></span><span class="event-date">5/15–19</span></a>
-                  <a href="https://www.ieee-ras.org/event/2029-ieee-international-conference-on-robotics-and-automation-icra-68559/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event europe" style="--x:86.5%;--w:17%" aria-label="ICRA 2029 Milan, Italy, Allianz MiCo, 5월 7일부터 12일" title="Venue: Allianz MiCo – Milano Convention Centre"><span class="event-place"><span>Milan</span><span>(Italy)</span></span><span class="event-date">5/7–12</span><span class="event-venue">Allianz MiCo</span></a>
+                  <a href="https://2026.ieee-icra.org/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event europe past" style="--x:9.2%;--w:17%" aria-label="ICRA 2026 Vienna, Austria, 6월 1일부터 5일, 기준일 이전 종료, VIECON / Messe Wien" title="Venue: VIECON / Messe Wien"><span class="event-place"><span>Vienna</span><span>(Austria)</span></span><span class="event-date">6/1–5</span><span class="event-venue">VIECON / Messe Wien</span></a>
+                  <a href="https://2027.ieee-icra.org/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event asia" style="--x:29.2%;--w:17%" aria-label="ICRA 2027 Seoul, Korea, COEX, 5월 24일부터 28일" title="Venue: COEX"><span class="event-place"><span>Seoul</span><span>(Korea)</span></span><span class="event-date">5/24–28</span><span class="event-venue">COEX</span></a>
+                  <a href="https://www.ieee-ras.org/events/tag/additive-manufacturing-aerial-robotics-agent-based-systems-agricultural-automation-ai-reasoning-methods-assembly-automation-at-micro-nano-scales-automation-in-life-sciences-biotechnology/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event south-america" style="--x:48.8%;--w:17%" aria-label="ICRA 2028 Rio de Janeiro, Brazil, 5월 15일부터 19일"><span class="event-place"><span>Rio de Janeiro</span><span>(Brazil)</span></span><span class="event-date">5/15–19</span></a>
+                  <a href="https://www.ieee-ras.org/event/2029-ieee-international-conference-on-robotics-and-automation-icra-68559/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event europe" style="--x:69.2%;--w:17%" aria-label="ICRA 2029 Milan, Italy, Allianz MiCo, 5월 7일부터 12일" title="Venue: Allianz MiCo – Milano Convention Centre"><span class="event-place"><span>Milan</span><span>(Italy)</span></span><span class="event-date">5/7–12</span><span class="event-venue">Allianz MiCo</span></a>
+                  <a href="https://www.ieee-ras.org/event/2030-ieee-international-conference-on-robotics-and-automation-icra-74057/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event asia" style="--x:87.3%" aria-label="ICRA 2030 Bangkok, Thailand, 5월 13일부터 17일, Queen Sirikit National Convention Center; IEEE RAS 일정 기준, 초기 보도의 6월 표기와 상충" title="IEEE RAS: 2030-05-13–17; 일부 초기 보도는 6/13–17로 상충하므로 예약 전 재확인"><span class="event-place"><span>Bangkok</span><span>(Thailand)</span></span><span class="event-date">5/13–17 *</span><span class="event-venue">QSNCC</span></a>
                 </div>
               </div>
 
               <div class="timeline-lane main-conference">
                 <div class="lane-name">IROS <span class="main-conference-badge">MAIN</span></div>
                 <div class="timeline-track">
-                  <a href="https://2026.ieee-iros.org/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america past" style="--x:19.5%;--w:18%" title="Venue: David L. Lawrence Convention Center" aria-label="IROS 2026 종료, Pittsburgh, USA, 9월 27일부터 10월 1일"><span class="event-place"><span>Pittsburgh</span><span>(USA)</span></span><span class="event-date">9/27–10/1</span><span class="event-venue">David L. Lawrence CC</span></a>
-                  <a href="https://2027.ieee-iros.org/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event europe" style="--x:44.5%;--w:18%" aria-label="IROS 2027 Florence, Italy, Fortezza da Basso, 9월 27일부터 10월 1일" title="Venue: Fortezza da Basso"><span class="event-place"><span>Florence</span><span>(Italy)</span></span><span class="event-date">9/27–10/1</span><span class="event-venue">Fortezza da Basso</span></a>
-                  <a href="https://www.besydney.com.au/media/v4wpfp31/besydney-media-release-sydney-attracting-ai-events-iros.pdf" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event oceania" style="--x:70.5%;--w:18%" aria-label="IROS 2028 Sydney, Australia, 10월 2일부터 6일, ICC Sydney" title="Venue: International Convention Centre Sydney (ICC Sydney)"><span class="event-place"><span>Sydney</span><span>(Australia)</span></span><span class="event-date">10/2–6</span><span class="event-venue">ICC Sydney</span></a>
-                  <a href="https://tickle.utk.edu/bme/news/tan-elected-as-general-chair-for-ieee-rsj-international-conference/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america edge" style="--x:95.5%" aria-label="IROS 2029 Anaheim, California, USA, 개최일과 세부 행사장 미공개; 월 위치는 예년 기준 추정" title="General Chair 소속 대학 공식 발표: Anaheim, California. 날짜·행사장 미공개; 월 위치는 예년 기준 추정"><span class="event-place"><span>Anaheim</span><span>(USA)</span></span><span class="event-date">날짜 미공개</span></a>
+                  <a href="https://2026.ieee-iros.org/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america past" style="--x:15.6%;--w:18%" title="Venue: David L. Lawrence Convention Center" aria-label="IROS 2026 종료, Pittsburgh, USA, 9월 27일부터 10월 1일"><span class="event-place"><span>Pittsburgh</span><span>(USA)</span></span><span class="event-date">9/27–10/1</span><span class="event-venue">David L. Lawrence CC</span></a>
+                  <a href="https://2027.ieee-iros.org/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event europe" style="--x:35.6%;--w:18%" aria-label="IROS 2027 Florence, Italy, Fortezza da Basso, 9월 27일부터 10월 1일" title="Venue: Fortezza da Basso"><span class="event-place"><span>Florence</span><span>(Italy)</span></span><span class="event-date">9/27–10/1</span><span class="event-venue">Fortezza da Basso</span></a>
+                  <a href="https://www.besydney.com.au/media/v4wpfp31/besydney-media-release-sydney-attracting-ai-events-iros.pdf" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event oceania" style="--x:56.4%;--w:18%" aria-label="IROS 2028 Sydney, Australia, 10월 2일부터 6일, ICC Sydney" title="Venue: International Convention Centre Sydney (ICC Sydney)"><span class="event-place"><span>Sydney</span><span>(Australia)</span></span><span class="event-date">10/2–6</span><span class="event-venue">ICC Sydney</span></a>
+                  <a href="https://tickle.utk.edu/bme/news/tan-elected-as-general-chair-for-ieee-rsj-international-conference/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america edge" style="--x:76.4%" aria-label="IROS 2029 Anaheim, California, USA, 개최일과 세부 행사장 미공개; 월 위치는 예년 기준 추정" title="General Chair 소속 대학 공식 발표: Anaheim, California. 날짜·행사장 미공개; 월 위치는 예년 기준 추정"><span class="event-place"><span>Anaheim</span><span>(USA)</span></span><span class="event-date">날짜 미공개</span></a>
+                  <div class="timeline-event unknown" style="--x:96.4%" aria-label="IROS 2030, 개최 도시와 날짜 미확인; 월 위치는 예년 기준 9–10월경 추정"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 9–10월경</span></div>
                 </div>
               </div>
 
               <div class="timeline-lane main-conference">
                 <div class="lane-name">RSS <span class="main-conference-badge">MAIN</span></div>
                 <div class="timeline-track">
-                  <a href="https://roboticsconference.org/2026/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event oceania past" style="--x:14%;--w:17%" title="Venue: International Convention Centre Sydney · University of Technology Sydney" aria-label="RSS 2026 Sydney, Australia, 7월 13일부터 17일, 기준일 이전 종료"><span class="event-place"><span>Sydney</span><span>(Australia)</span></span><span class="event-date">7/13–17</span><span class="event-venue">ICC Sydney · UTS</span></a>
-                  <a href="https://roboticsconference.org/attending/travel/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event europe" style="--x:38.2%;--w:17%" aria-label="RSS 2027 Athens, Greece, 7월 6일부터 11일, Megaron Athens 및 Harokopio University" title="Venue: Megaron Athens International Conference Centre · Harokopio University"><span class="event-place"><span>Athens</span><span>(Greece)</span></span><span class="event-date">7/6–11</span><span class="event-venue">Megaron · Harokopio University</span></a>
-                  <div class="timeline-event unknown" style="--x:64%" aria-label="RSS 2028, 예년 기준 7월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 7월경</span></div>
-                  <div class="timeline-event unknown" style="--x:89%" aria-label="RSS 2029, 예년 기준 7월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 7월경</span></div>
+                  <a href="https://roboticsconference.org/2026/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event oceania past" style="--x:11.2%;--w:17%" title="Venue: International Convention Centre Sydney · University of Technology Sydney" aria-label="RSS 2026 Sydney, Australia, 7월 13일부터 17일, 기준일 이전 종료"><span class="event-place"><span>Sydney</span><span>(Australia)</span></span><span class="event-date">7/13–17</span><span class="event-venue">ICC Sydney · UTS</span></a>
+                  <a href="https://roboticsconference.org/attending/travel/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event europe" style="--x:30.56%;--w:17%" aria-label="RSS 2027 Athens, Greece, 7월 6일부터 11일, Megaron Athens 및 Harokopio University" title="Venue: Megaron Athens International Conference Centre · Harokopio University"><span class="event-place"><span>Athens</span><span>(Greece)</span></span><span class="event-date">7/6–11</span><span class="event-venue">Megaron · Harokopio University</span></a>
+                  <div class="timeline-event unknown" style="--x:51.2%" aria-label="RSS 2028, 예년 기준 7월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 7월경</span></div>
+                  <div class="timeline-event unknown" style="--x:71.2%" aria-label="RSS 2029, 예년 기준 7월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 7월경</span></div>
+                  <div class="timeline-event unknown" style="--x:91.2%" aria-label="RSS 2030, 개최 도시와 날짜 미확인; 월 위치는 예년 기준 7월경 추정"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 7월경</span></div>
                 </div>
               </div>
 
               <div class="timeline-lane main-conference">
                 <div class="lane-name">CoRL <span class="main-conference-badge">MAIN</span></div>
                 <div class="timeline-track">
-                  <a href="https://2026.corl.org/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america past" style="--x:22%;--w:17%" aria-label="CoRL 2026 종료, Austin, USA, 11월 9일부터 12일, JW Marriott Austin; Hilton Austin; Bass Hall" title="Venue: JW Marriott Austin; Hilton Austin; Bass Hall"><span class="event-place"><span>Austin</span><span>(USA)</span></span><span class="event-date">11/9–12</span><span class="event-venue">JW Marriott · Hilton · Bass Hall</span></a>
-                  <div class="timeline-event unknown" style="--x:47%" aria-label="CoRL 2027, 예년 기준 11월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 11월경</span></div>
-                  <div class="timeline-event unknown" style="--x:72%" aria-label="CoRL 2028, 예년 기준 11월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 11월경</span></div>
-                  <div class="timeline-event unknown edge" style="--x:96%" aria-label="CoRL 2029, 예년 기준 11월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 11월경</span></div>
+                  <a href="https://2026.corl.org/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america past" style="--x:17.6%;--w:17%" aria-label="CoRL 2026 종료, Austin, USA, 11월 9일부터 12일, JW Marriott Austin; Hilton Austin; Bass Hall" title="Venue: JW Marriott Austin; Hilton Austin; Bass Hall"><span class="event-place"><span>Austin</span><span>(USA)</span></span><span class="event-date">11/9–12</span><span class="event-venue">JW Marriott · Hilton · Bass Hall</span></a>
+                  <div class="timeline-event unknown" style="--x:37.6%" aria-label="CoRL 2027, 예년 기준 11월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 11월경</span></div>
+                  <div class="timeline-event unknown" style="--x:57.6%" aria-label="CoRL 2028, 예년 기준 11월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 11월경</span></div>
+                  <div class="timeline-event unknown edge" style="--x:76.8%" aria-label="CoRL 2029, 예년 기준 11월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 11월경</span></div>
+                  <div class="timeline-event unknown" style="--x:96.8%" aria-label="CoRL 2030, 개최 도시와 날짜 미확인; 월 위치는 예년 기준 11월경 추정"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 11월경</span></div>
                 </div>
               </div>
 
               <div class="timeline-lane">
                 <div class="lane-name">iSpaRo</div>
                 <div class="timeline-track">
-                  <a href="https://www.isairas-isparo.de/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event europe past" style="--x:22%;--w:17%" aria-label="iSpaRo 2026 종료, Cologne, Germany, 11월 3일부터 6일, Confex" title="Venue: Confex"><span class="event-place"><span>Cologne</span><span>(Germany)</span></span><span class="event-date">11/3–6</span><span class="event-venue">Confex</span></a>
-                  <div class="timeline-event unknown" style="--x:47%" aria-label="iSpaRo 2027, 예년 기준 11월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 11월경</span></div>
-                  <div class="timeline-event unknown" style="--x:72%" aria-label="iSpaRo 2028, 예년 기준 11월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 11월경</span></div>
-                  <div class="timeline-event unknown edge" style="--x:96%" aria-label="iSpaRo 2029, 예년 기준 11월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 11월경</span></div>
+                  <a href="https://www.isairas-isparo.de/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event europe past" style="--x:17.6%;--w:17%" aria-label="iSpaRo 2026 종료, Cologne, Germany, 11월 3일부터 6일, Confex" title="Venue: Confex"><span class="event-place"><span>Cologne</span><span>(Germany)</span></span><span class="event-date">11/3–6</span><span class="event-venue">Confex</span></a>
+                  <div class="timeline-event unknown" style="--x:37.6%" aria-label="iSpaRo 2027, 예년 기준 11월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 11월경</span></div>
+                  <div class="timeline-event unknown" style="--x:57.6%" aria-label="iSpaRo 2028, 예년 기준 11월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 11월경</span></div>
+                  <div class="timeline-event unknown edge" style="--x:76.8%" aria-label="iSpaRo 2029, 예년 기준 11월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 11월경</span></div>
+                  <div class="timeline-event unknown" style="--x:96.8%" aria-label="iSpaRo 2030, 개최 도시와 날짜 미확인; 월 위치는 예년 기준 11월경 추정"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 11월경</span></div>
                 </div>
               </div>
 
@@ -969,88 +975,97 @@
               <div class="timeline-lane">
                 <div class="lane-name"><span>IFAC<br><small>World Congress</small></span></div>
                 <div class="timeline-track">
-                  <a href="https://ifac-control.org/conferences/23rd-ifac-world-congress-in-busan/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event asia past" style="--x:16.2%" aria-label="IFAC World Congress 2026 종료, Busan, Korea, 8월 23일부터 28일, BEXCO" title="Venue: BEXCO; 3년 주기 개최"><span class="event-place"><span>Busan</span><span>(Korea)</span></span><span class="event-date">8/23–28</span><span class="event-venue">BEXCO</span></a>
-                  <a href="https://ifac-control.org/conferences/24th-ifac-world-congress/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event europe" style="--x:88%" aria-label="IFAC World Congress 2029 Amsterdam, Netherlands, 7월 8일부터 13일, Amsterdam RAI Convention Centre" title="Venue: Amsterdam RAI Convention Centre; 3년 주기 개최로 2027·2028에는 미개최"><span class="event-place"><span>Amsterdam</span><span>(Netherlands)</span></span><span class="event-date">7/8–13</span><span class="event-venue">Amsterdam RAI</span></a>
+                  <a href="https://ifac-control.org/conferences/23rd-ifac-world-congress-in-busan/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event asia past" style="--x:12.96%" aria-label="IFAC World Congress 2026 종료, Busan, Korea, 8월 23일부터 28일, BEXCO" title="Venue: BEXCO; 3년 주기 개최"><span class="event-place"><span>Busan</span><span>(Korea)</span></span><span class="event-date">8/23–28</span><span class="event-venue">BEXCO</span></a>
+                  <a href="https://ifac-control.org/conferences/24th-ifac-world-congress/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event europe" style="--x:70.4%" aria-label="IFAC World Congress 2029 Amsterdam, Netherlands, 7월 8일부터 13일, Amsterdam RAI Convention Centre" title="Venue: Amsterdam RAI Convention Centre; 3년 주기 개최로 2027·2028에는 미개최"><span class="event-place"><span>Amsterdam</span><span>(Netherlands)</span></span><span class="event-date">7/8–13</span><span class="event-venue">Amsterdam RAI</span></a>
                 </div>
               </div>
 
               <div class="timeline-lane">
                 <div class="lane-name">HRI</div>
                 <div class="timeline-track">
-                  <a href="https://humanrobotinteraction.org/2026/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event europe past" style="--x:6.5%" aria-label="HRI 2026 Edinburgh, UK, 3월 16일부터 19일, 기준일 이전 종료"><span class="event-place"><span>Edinburgh</span><span>(UK)</span></span><span class="event-date">3/16–19</span></a>
-                  <a href="https://humanrobotinteraction.org/2027/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america" style="--x:31.5%" aria-label="HRI 2027 Santa Clara, USA, 3월 8일부터 12일"><span class="event-place"><span>Santa Clara</span><span>(USA)</span></span><span class="event-date">3/8–12</span></a>
-                  <div class="timeline-event unknown" style="--x:56.5%" aria-label="HRI 2028, 예년 기준 3월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 3월경</span></div>
-                  <div class="timeline-event unknown" style="--x:81.5%" aria-label="HRI 2029, 예년 기준 3월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 3월경</span></div>
+                  <a href="https://humanrobotinteraction.org/2026/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event europe past" style="--x:5.2%" aria-label="HRI 2026 Edinburgh, UK, 3월 16일부터 19일, 기준일 이전 종료"><span class="event-place"><span>Edinburgh</span><span>(UK)</span></span><span class="event-date">3/16–19</span></a>
+                  <a href="https://humanrobotinteraction.org/2027/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america" style="--x:25.2%" aria-label="HRI 2027 Santa Clara, USA, 3월 8일부터 12일"><span class="event-place"><span>Santa Clara</span><span>(USA)</span></span><span class="event-date">3/8–12</span></a>
+                  <div class="timeline-event unknown" style="--x:45.2%" aria-label="HRI 2028, 예년 기준 3월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 3월경</span></div>
+                  <div class="timeline-event unknown" style="--x:65.2%" aria-label="HRI 2029, 예년 기준 3월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 3월경</span></div>
+                  <div class="timeline-event unknown" style="--x:85.2%" aria-label="HRI 2030, 개최 도시와 날짜 미확인; 월 위치는 예년 기준 3월경 추정"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 3월경</span></div>
                 </div>
               </div>
 
               <div class="timeline-lane">
                 <div class="lane-name">WAFR</div>
                 <div class="timeline-track">
-                  <a href="https://algorithmic-robotics.org/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event europe past" style="--x:11.5%" aria-label="WAFR 2026 Oulu, Finland, 6월 15일부터 17일, 기준일 이전 종료"><span class="event-place"><span>Oulu</span><span>(Finland)</span></span><span class="event-date">6/15–17</span></a>
-                  <div class="timeline-event unknown" style="--x:61.5%" aria-label="WAFR 2028, 예년 기준 6월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 6월경</span></div>
+                  <a href="https://algorithmic-robotics.org/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event europe past" style="--x:9.2%" aria-label="WAFR 2026 Oulu, Finland, 6월 15일부터 17일, 기준일 이전 종료"><span class="event-place"><span>Oulu</span><span>(Finland)</span></span><span class="event-date">6/15–17</span></a>
+                  <div class="timeline-event unknown" style="--x:49.2%" aria-label="WAFR 2028, 예년 기준 6월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 6월경</span></div>
+                  <div class="timeline-event unknown" style="--x:89.2%" aria-label="WAFR 2030, 개최 도시와 날짜 미확인; 월 위치는 예년 기준 6월경 추정"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 6월경</span></div>
                 </div>
               </div>
 
               <div class="timeline-lane">
                 <div class="lane-name">Humanoids</div>
                 <div class="timeline-track">
-                  <a href="https://2026.ieee-humanoids.org/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america" style="--x:24%" title="Venue: Santa Clara Convention Center" aria-label="Humanoids 2026 Santa Clara, USA, 12월 7일부터 9일"><span class="event-place"><span>Santa Clara</span><span>(USA)</span></span><span class="event-date">12/7–9</span><span class="event-venue">Santa Clara Convention Center</span></a>
-                  <div class="timeline-event unknown" style="--x:49%" aria-label="Humanoids 2027, 예년 기준 11월에서 12월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 11–12월경</span></div>
-                  <div class="timeline-event unknown" style="--x:74%" aria-label="Humanoids 2028, 예년 기준 11월에서 12월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 11–12월경</span></div>
-                  <div class="timeline-event unknown edge" style="--x:99%" aria-label="Humanoids 2029, 예년 기준 11월에서 12월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 11–12월경</span></div>
+                  <a href="https://2026.ieee-humanoids.org/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america" style="--x:19.2%" title="Venue: Santa Clara Convention Center" aria-label="Humanoids 2026 Santa Clara, USA, 12월 7일부터 9일"><span class="event-place"><span>Santa Clara</span><span>(USA)</span></span><span class="event-date">12/7–9</span><span class="event-venue">Santa Clara Convention Center</span></a>
+                  <div class="timeline-event unknown" style="--x:39.2%" aria-label="Humanoids 2027, 예년 기준 11월에서 12월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 11–12월경</span></div>
+                  <div class="timeline-event unknown" style="--x:59.2%" aria-label="Humanoids 2028, 예년 기준 11월에서 12월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 11–12월경</span></div>
+                  <div class="timeline-event unknown edge" style="--x:79.2%" aria-label="Humanoids 2029, 예년 기준 11월에서 12월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 11–12월경</span></div>
+                  <div class="timeline-event unknown" style="--x:99.2%" aria-label="Humanoids 2030, 개최 도시와 날짜 미확인; 월 위치는 예년 기준 11–12월경 추정"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 11–12월경</span></div>
                 </div>
               </div>
 
               <div class="timeline-lane">
                 <div class="lane-name">IV</div>
                 <div class="timeline-track">
-                  <a href="https://ieee-iv.org/2026/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america past" style="--x:11.5%" aria-label="IV 2026 Detroit, USA, 6월 22일부터 25일, 기준일 이전 종료"><span class="event-place"><span>Detroit</span><span>(USA)</span></span><span class="event-date">6/22–25</span></a>
-                  <a href="https://ieee-iv.org/2027/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event oceania" style="--x:36.5%" aria-label="IV 2027 Perth, Australia, 6월 15일부터 18일"><span class="event-place"><span>Perth</span><span>(Australia)</span></span><span class="event-date">6/15–18</span></a>
-                  <a href="https://ieee-itss.org/conf/iv/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event europe" style="--x:61.5%" aria-label="IV 2028 Barcelona, Spain, 6월 27일부터 30일"><span class="event-place"><span>Barcelona</span><span>(Spain)</span></span><span class="event-date">6/27–30</span></a>
-                  <div class="timeline-event unknown" style="--x:86.5%" aria-label="IV 2029, 예년 기준 6월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 6월경</span></div>
+                  <a href="https://ieee-iv.org/2026/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america past" style="--x:9.2%" aria-label="IV 2026 Detroit, USA, 6월 22일부터 25일, 기준일 이전 종료"><span class="event-place"><span>Detroit</span><span>(USA)</span></span><span class="event-date">6/22–25</span></a>
+                  <a href="https://ieee-iv.org/2027/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event oceania" style="--x:29.2%" aria-label="IV 2027 Perth, Australia, 6월 15일부터 18일"><span class="event-place"><span>Perth</span><span>(Australia)</span></span><span class="event-date">6/15–18</span></a>
+                  <a href="https://ieee-itss.org/conf/iv/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event europe" style="--x:49.2%" aria-label="IV 2028 Barcelona, Spain, 6월 27일부터 30일"><span class="event-place"><span>Barcelona</span><span>(Spain)</span></span><span class="event-date">6/27–30</span></a>
+                  <div class="timeline-event unknown" style="--x:69.2%" aria-label="IV 2029, 예년 기준 6월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 6월경</span></div>
+                  <div class="timeline-event unknown" style="--x:89.2%" aria-label="IV 2030, 개최 도시와 날짜 미확인; 월 위치는 예년 기준 6월경 추정"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 6월경</span></div>
                 </div>
               </div>
 
               <div class="timeline-lane">
                 <div class="lane-name">ITSC</div>
                 <div class="timeline-track">
-                  <a href="https://ieee-itsc.org/2026/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event europe past" style="--x:18.5%" aria-label="ITSC 2026 종료, Naples, Italy, 9월 15일부터 18일, Stazione Marittima" title="Venue: Stazione Marittima"><span class="event-place"><span>Naples</span><span>(Italy)</span></span><span class="event-date">9/15–18</span><span class="event-venue">Stazione Marittima</span></a>
-                  <a href="https://engage.ieee.org/ITSS-Newsetter-Q4-2026.html" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america" style="--x:43.5%" aria-label="ITSC 2027 Boston, USA, 9월 21일부터 24일"><span class="event-place"><span>Boston</span><span>(USA)</span></span><span class="event-date">9/21–24</span></a>
-                  <a href="https://ieee-itss.org/conf/itsc/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event asia" style="--x:68.5%" aria-label="ITSC 2028 Tokyo, Japan, 9월 12일부터 15일, Takanawa Gateway Convention Center" title="Venue: TAKANAWA GATEWAY Convention Center"><span class="event-place"><span>Tokyo</span><span>(Japan)</span></span><span class="event-date">9/12–15</span><span class="event-venue">Takanawa Gateway CC</span></a>
-                  <div class="timeline-event unknown" style="--x:93.5%" aria-label="ITSC 2029, 예년 기준 9월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 9월경</span></div>
+                  <a href="https://ieee-itsc.org/2026/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event europe past" style="--x:14.8%" aria-label="ITSC 2026 종료, Naples, Italy, 9월 15일부터 18일, Stazione Marittima" title="Venue: Stazione Marittima"><span class="event-place"><span>Naples</span><span>(Italy)</span></span><span class="event-date">9/15–18</span><span class="event-venue">Stazione Marittima</span></a>
+                  <a href="https://engage.ieee.org/ITSS-Newsetter-Q4-2026.html" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america" style="--x:34.8%" aria-label="ITSC 2027 Boston, USA, 9월 21일부터 24일"><span class="event-place"><span>Boston</span><span>(USA)</span></span><span class="event-date">9/21–24</span></a>
+                  <a href="https://ieee-itss.org/conf/itsc/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event asia" style="--x:54.8%" aria-label="ITSC 2028 Tokyo, Japan, 9월 12일부터 15일, Takanawa Gateway Convention Center" title="Venue: TAKANAWA GATEWAY Convention Center"><span class="event-place"><span>Tokyo</span><span>(Japan)</span></span><span class="event-date">9/12–15</span><span class="event-venue">Takanawa Gateway CC</span></a>
+                  <div class="timeline-event unknown" style="--x:74.8%" aria-label="ITSC 2029, 예년 기준 9월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 9월경</span></div>
+                  <div class="timeline-event unknown" style="--x:94.8%" aria-label="ITSC 2030, 개최 도시와 날짜 미확인; 월 위치는 예년 기준 9월경 추정"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 9월경</span></div>
                 </div>
               </div>
 
               <div class="timeline-lane">
                 <div class="lane-name">UR</div>
                 <div class="timeline-track">
-                  <a href="https://2026.ubiquitousrobots.org/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event asia past" style="--x:14%;--w:17%" aria-label="UR 2026 Ibaraki, Osaka, Japan, 7월 15일부터 18일, 기준일 이전 종료"><span class="event-place"><span>Ibaraki, Osaka</span><span>(Japan)</span></span><span class="event-date">7/15–18</span></a>
-                  <div class="timeline-event unknown" style="--x:39%" aria-label="UR 2027, 예년 기준 7월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 7월경</span></div>
-                  <div class="timeline-event unknown" style="--x:64%" aria-label="UR 2028, 예년 기준 7월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 7월경</span></div>
-                  <div class="timeline-event unknown" style="--x:89%" aria-label="UR 2029, 예년 기준 7월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 7월경</span></div>
+                  <a href="https://2026.ubiquitousrobots.org/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event asia past" style="--x:11.2%;--w:17%" aria-label="UR 2026 Ibaraki, Osaka, Japan, 7월 15일부터 18일, 기준일 이전 종료"><span class="event-place"><span>Ibaraki, Osaka</span><span>(Japan)</span></span><span class="event-date">7/15–18</span></a>
+                  <div class="timeline-event unknown" style="--x:31.2%" aria-label="UR 2027, 예년 기준 7월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 7월경</span></div>
+                  <div class="timeline-event unknown" style="--x:51.2%" aria-label="UR 2028, 예년 기준 7월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 7월경</span></div>
+                  <div class="timeline-event unknown" style="--x:71.2%" aria-label="UR 2029, 예년 기준 7월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 7월경</span></div>
+                  <div class="timeline-event unknown" style="--x:91.2%" aria-label="UR 2030, 개최 도시와 날짜 미확인; 월 위치는 예년 기준 7월경 추정"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 7월경</span></div>
                 </div>
               </div>
 
               <div class="timeline-lane">
                 <div class="lane-name">ICCAS</div>
                 <div class="timeline-track">
-                  <a href="https://2026.iccas.org/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event asia past" style="--x:20.5%;--w:17%" aria-label="ICCAS 2026 종료, Sapporo, Japan, 10월 27일부터 30일, Hotel Emisia" title="Venue: Hotel Emisia"><span class="event-place"><span>Sapporo</span><span>(Japan)</span></span><span class="event-date">10/27–30</span><span class="event-venue">Hotel Emisia</span></a>
-                  <a href="https://icros.org/eng/sub/sub04_1.asp" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event asia" style="--x:47%;--w:17%" aria-label="ICCAS 2027 Jeju, Korea, Sheraton Jeju Hotel, 11월 2일부터 5일" title="Venue: Sheraton Jeju Hotel"><span class="event-place"><span>Jeju</span><span>(Korea)</span></span><span class="event-date">11/2–5</span><span class="event-venue">Sheraton Jeju Hotel</span></a>
-                  <div class="timeline-event unknown" style="--x:70.5%" aria-label="ICCAS 2028, 예년 기준 10월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 10월경</span></div>
-                  <div class="timeline-event unknown edge" style="--x:95.5%" aria-label="ICCAS 2029, 예년 기준 10월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 10월경</span></div>
+                  <a href="https://2026.iccas.org/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event asia past" style="--x:16.4%;--w:17%" aria-label="ICCAS 2026 종료, Sapporo, Japan, 10월 27일부터 30일, Hotel Emisia" title="Venue: Hotel Emisia"><span class="event-place"><span>Sapporo</span><span>(Japan)</span></span><span class="event-date">10/27–30</span><span class="event-venue">Hotel Emisia</span></a>
+                  <a href="https://icros.org/eng/sub/sub04_1.asp" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event asia" style="--x:37.6%;--w:17%" aria-label="ICCAS 2027 Jeju, Korea, Sheraton Jeju Hotel, 11월 2일부터 5일" title="Venue: Sheraton Jeju Hotel"><span class="event-place"><span>Jeju</span><span>(Korea)</span></span><span class="event-date">11/2–5</span><span class="event-venue">Sheraton Jeju Hotel</span></a>
+                  <div class="timeline-event unknown" style="--x:56.4%" aria-label="ICCAS 2028, 예년 기준 10월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 10월경</span></div>
+                  <div class="timeline-event unknown edge" style="--x:76.4%" aria-label="ICCAS 2029, 예년 기준 10월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 10월경</span></div>
+                  <div class="timeline-event unknown" style="--x:96.4%" aria-label="ICCAS 2030, 개최 도시와 날짜 미확인; 월 위치는 예년 기준 10월경 추정"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 10월경</span></div>
                 </div>
               </div>
 <div class="timeline-lane"><div class="lane-name"><span>OCEANS<br><small>Americas</small></span></div><div class="timeline-track">
-<a href="https://monterey26.oceansconference.org/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america past" style="--x:18.2%" aria-label="OCEANS 2026, Monterey, USA, 9/21–24, Monterey Conference Center, 종료" title="OCEANS 2026 · Monterey · 9/21–24 · Monterey Conference Center"><span class="event-place"><span>Monterey</span><span>(USA)</span></span><span class="event-date">9/21–24</span><span class="event-venue">Monterey Conference Center</span></a>
-<a href="https://oceansconference.org/future-conferences/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america" style="--x:42.6%" aria-label="OCEANS 2027, Anchorage, USA, 9/13–16" title="OCEANS 2027 · Anchorage · 9/13–16"><span class="event-place"><span>Anchorage</span><span>(USA)</span></span><span class="event-date">9/13–16</span></a>
-<a href="https://oceansconference.org/future-conferences/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america" style="--x:67.9%" aria-label="OCEANS 2028, San Diego, USA, 9/18–22" title="OCEANS 2028 · San Diego · 9/18–22"><span class="event-place"><span>San Diego</span><span>(USA)</span></span><span class="event-date">9/18–22</span></a>
-<div class="timeline-event unknown" style="--x:93%" aria-label="OCEANS 2029, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 9–10월경</span></div>
+<a href="https://monterey26.oceansconference.org/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america past" style="--x:14.56%" aria-label="OCEANS 2026, Monterey, USA, 9/21–24, Monterey Conference Center, 종료" title="OCEANS 2026 · Monterey · 9/21–24 · Monterey Conference Center"><span class="event-place"><span>Monterey</span><span>(USA)</span></span><span class="event-date">9/21–24</span><span class="event-venue">Monterey Conference Center</span></a>
+<a href="https://oceansconference.org/future-conferences/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america" style="--x:34.08%" aria-label="OCEANS 2027, Anchorage, USA, 9/13–16" title="OCEANS 2027 · Anchorage · 9/13–16"><span class="event-place"><span>Anchorage</span><span>(USA)</span></span><span class="event-date">9/13–16</span></a>
+<a href="https://oceansconference.org/future-conferences/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america" style="--x:54.32%" aria-label="OCEANS 2028, San Diego, USA, 9/18–22" title="OCEANS 2028 · San Diego · 9/18–22"><span class="event-place"><span>San Diego</span><span>(USA)</span></span><span class="event-date">9/18–22</span></a>
+<div class="timeline-event unknown" style="--x:74.4%" aria-label="OCEANS 2029, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 9–10월경</span></div>
+                  <div class="timeline-event unknown" style="--x:94.4%" aria-label="OCEANS Americas 2030, 개최 도시와 날짜 미확인; 월 위치는 예년 기준 9–10월경 추정"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 9–10월경</span></div>
 </div></div><div class="timeline-lane"><div class="lane-name"><span>OCEANS<br><small>Europe / APAC</small></span></div><div class="timeline-track">
-<a href="https://sanya26.oceansconference.org/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event asia past" style="--x:9.9%" aria-label="OCEANS 2026, Sanya, China, 5/25–28, Mangrove Tree Convention Center, 종료" title="OCEANS 2026 · Sanya · 5/25–28 · Mangrove Tree Convention Center"><span class="event-place"><span>Sanya</span><span>(China)</span></span><span class="event-date">5/25–28</span><span class="event-venue">Mangrove Tree Convention Center</span></a>
-<a href="https://aberdeen27.oceansconference.org/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event europe" style="--x:36.8%" aria-label="OCEANS 2027, Aberdeen, UK, 6/21–24, P&amp;J Live" title="OCEANS 2027 · Aberdeen · 6/21–24 · P&amp;J Live"><span class="event-place"><span>Aberdeen</span><span>(UK)</span></span><span class="event-date">6/21–24</span><span class="event-venue">P&amp;J Live</span></a>
-<a href="https://oceansconference.org/future-conferences/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event oceania" style="--x:56.5%" aria-label="OCEANS 2028, Adelaide, Australia, 4/3–6" title="OCEANS 2028 · Adelaide · 4/3–6"><span class="event-place"><span>Adelaide</span><span>(Australia)</span></span><span class="event-date">4/3–6</span></a>
-<div class="timeline-event unknown" style="--x:86%" aria-label="OCEANS 2029, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 5–6월경</span></div>
+<a href="https://sanya26.oceansconference.org/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event asia past" style="--x:7.92%" aria-label="OCEANS 2026, Sanya, China, 5/25–28, Mangrove Tree Convention Center, 종료" title="OCEANS 2026 · Sanya · 5/25–28 · Mangrove Tree Convention Center"><span class="event-place"><span>Sanya</span><span>(China)</span></span><span class="event-date">5/25–28</span><span class="event-venue">Mangrove Tree Convention Center</span></a>
+<a href="https://aberdeen27.oceansconference.org/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event europe" style="--x:29.44%" aria-label="OCEANS 2027, Aberdeen, UK, 6/21–24, P&amp;J Live" title="OCEANS 2027 · Aberdeen · 6/21–24 · P&amp;J Live"><span class="event-place"><span>Aberdeen</span><span>(UK)</span></span><span class="event-date">6/21–24</span><span class="event-venue">P&amp;J Live</span></a>
+<a href="https://oceansconference.org/future-conferences/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event oceania" style="--x:45.2%" aria-label="OCEANS 2028, Adelaide, Australia, 4/3–6" title="OCEANS 2028 · Adelaide · 4/3–6"><span class="event-place"><span>Adelaide</span><span>(Australia)</span></span><span class="event-date">4/3–6</span></a>
+<div class="timeline-event unknown" style="--x:68.8%" aria-label="OCEANS 2029, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 5–6월경</span></div>
+                  <div class="timeline-event unknown" style="--x:88.8%" aria-label="OCEANS Europe / APAC 2030, 개최 도시와 날짜 미확인; 월 위치는 예년 기준 5–6월경 추정"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 5–6월경</span></div>
 </div></div>
             </div>
 
@@ -1060,131 +1075,143 @@
               <div class="timeline-lane">
                 <div class="lane-name">CVPR</div>
                 <div class="timeline-track">
-                  <a href="https://cvpr.thecvf.com/Conferences/2026" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america past" style="--x:11.5%;--w:17%" aria-label="CVPR 2026 Denver, USA, 6월 3일부터 7일, 기준일 이전 종료"><span class="event-place"><span>Denver</span><span>(USA)</span></span><span class="event-date">6/3–7</span></a>
-                  <a href="https://cvpr.thecvf.com/Conferences/2027" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america" style="--x:36.5%;--w:17%" aria-label="CVPR 2027 Seattle, USA, 6월 20일부터 25일, Seattle Convention Center" title="Venue: Seattle Convention Center"><span class="event-place"><span>Seattle</span><span>(USA)</span></span><span class="event-date">6/20–25</span><span class="event-venue">Seattle Convention Center</span></a>
-                  <a href="https://www.thecvf.com/?page_id=100" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america" style="--x:62.5%;--w:18%" aria-label="CVPR 2028 San Antonio, USA, 날짜 미공개"><span class="event-place"><span>San Antonio</span><span>(USA)</span></span><span class="event-date">날짜 미공개</span></a>
-                  <a href="https://www.thecvf.com/?page_id=100" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america" style="--x:87.5%;--w:18%" aria-label="CVPR 2029 Los Angeles, USA, 날짜 미공개"><span class="event-place"><span>Los Angeles</span><span>(USA)</span></span><span class="event-date">날짜 미공개</span></a>
+                  <a href="https://cvpr.thecvf.com/Conferences/2026" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america past" style="--x:9.2%;--w:17%" aria-label="CVPR 2026 Denver, USA, 6월 3일부터 7일, 기준일 이전 종료"><span class="event-place"><span>Denver</span><span>(USA)</span></span><span class="event-date">6/3–7</span></a>
+                  <a href="https://cvpr.thecvf.com/Conferences/2027" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america" style="--x:29.2%;--w:17%" aria-label="CVPR 2027 Seattle, USA, 6월 20일부터 25일, Seattle Convention Center" title="Venue: Seattle Convention Center"><span class="event-place"><span>Seattle</span><span>(USA)</span></span><span class="event-date">6/20–25</span><span class="event-venue">Seattle Convention Center</span></a>
+                  <a href="https://www.thecvf.com/?page_id=100" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america" style="--x:50%;--w:18%" aria-label="CVPR 2028 San Antonio, USA, 날짜 미공개"><span class="event-place"><span>San Antonio</span><span>(USA)</span></span><span class="event-date">날짜 미공개</span></a>
+                  <a href="https://www.thecvf.com/?page_id=100" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america" style="--x:70%;--w:18%" aria-label="CVPR 2029 Los Angeles, USA, 날짜 미공개"><span class="event-place"><span>Los Angeles</span><span>(USA)</span></span><span class="event-date">날짜 미공개</span></a>
+                  <a href="https://www.thecvf.com/?page_id=100" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america" style="--x:90%" aria-label="CVPR 2030 Denver, USA, 날짜 미공개"><span class="event-place"><span>Denver</span><span>(USA)</span></span><span class="event-date">날짜 미공개</span></a>
                 </div>
               </div>
 
               <div class="timeline-lane">
                 <div class="lane-name">WACV</div>
                 <div class="timeline-track">
-                  <a href="https://wacv.thecvf.com/Conferences/2026" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america past" style="--x:6.5%" aria-label="WACV 2026 Tucson, USA, 3월 6일부터 10일, 기준일 이전 종료"><span class="event-place"><span>Tucson</span><span>(USA)</span></span><span class="event-date">3/6–10</span></a>
-                  <a href="https://wacv.thecvf.com/Conferences/2027" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america" style="--x:27%" aria-label="WACV 2027 Lake Buena Vista, USA, 1월 4일부터 8일"><span class="event-place"><span>Lake Buena Vista</span><span>(USA)</span></span><span class="event-date">1/4–8</span><span class="event-venue">Disney Springs</span></a>
-                  <a href="https://www.thecvf.com/?page_id=100" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america" style="--x:54%" aria-label="WACV 2028 Waikoloa, Hawaii, USA, 날짜 미공개"><span class="event-place"><span>Waikoloa</span><span>(USA)</span></span><span class="event-date">날짜 미공개</span></a>
-                  <a href="https://www.thecvf.com/?page_id=100" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america" style="--x:79%" aria-label="WACV 2029 Waikoloa, Hawaii, USA, 날짜 미공개"><span class="event-place"><span>Waikoloa</span><span>(USA)</span></span><span class="event-date">날짜 미공개</span></a>
+                  <a href="https://wacv.thecvf.com/Conferences/2026" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america past" style="--x:5.2%" aria-label="WACV 2026 Tucson, USA, 3월 6일부터 10일, 기준일 이전 종료"><span class="event-place"><span>Tucson</span><span>(USA)</span></span><span class="event-date">3/6–10</span></a>
+                  <a href="https://wacv.thecvf.com/Conferences/2027" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america" style="--x:21.6%" aria-label="WACV 2027 Lake Buena Vista, USA, 1월 4일부터 8일"><span class="event-place"><span>Lake Buena Vista</span><span>(USA)</span></span><span class="event-date">1/4–8</span><span class="event-venue">Disney Springs</span></a>
+                  <a href="https://www.thecvf.com/?page_id=100" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america" style="--x:43.2%" aria-label="WACV 2028 Waikoloa, Hawaii, USA, 날짜 미공개"><span class="event-place"><span>Waikoloa</span><span>(USA)</span></span><span class="event-date">날짜 미공개</span></a>
+                  <a href="https://www.thecvf.com/?page_id=100" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america" style="--x:63.2%" aria-label="WACV 2029 Waikoloa, Hawaii, USA, 날짜 미공개"><span class="event-place"><span>Waikoloa</span><span>(USA)</span></span><span class="event-date">날짜 미공개</span></a>
+                  <a href="https://www.thecvf.com/?page_id=100" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america" style="--x:83.2%" aria-label="WACV 2030 Waikoloa, USA, 날짜 미공개"><span class="event-place"><span>Waikoloa</span><span>(USA)</span></span><span class="event-date">날짜 미공개</span></a>
                 </div>
               </div>
 
               <div class="timeline-lane">
                 <div class="lane-name">BMVC</div>
                 <div class="timeline-track">
-                  <a href="https://bmvc2026.bmva.org/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event europe" style="--x:22.5%" title="Venue: Lancaster Town Hall" aria-label="BMVC 2026 Lancaster, UK, 11월 23일부터 26일"><span class="event-place"><span>Lancaster</span><span>(UK)</span></span><span class="event-date">11/23–26</span><span class="event-venue">Lancaster Town Hall</span></a>
-                  <div class="timeline-event unknown" style="--x:47.5%" aria-label="BMVC 2027, 예년 기준 11월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 11월경</span></div>
-                  <div class="timeline-event unknown" style="--x:72.5%" aria-label="BMVC 2028, 예년 기준 11월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 11월경</span></div>
-                  <div class="timeline-event unknown edge" style="--x:97.5%" aria-label="BMVC 2029, 예년 기준 11월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 11월경</span></div>
+                  <a href="https://bmvc2026.bmva.org/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event europe" style="--x:18%" title="Venue: Lancaster Town Hall" aria-label="BMVC 2026 Lancaster, UK, 11월 23일부터 26일"><span class="event-place"><span>Lancaster</span><span>(UK)</span></span><span class="event-date">11/23–26</span><span class="event-venue">Lancaster Town Hall</span></a>
+                  <div class="timeline-event unknown" style="--x:38%" aria-label="BMVC 2027, 예년 기준 11월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 11월경</span></div>
+                  <div class="timeline-event unknown" style="--x:58%" aria-label="BMVC 2028, 예년 기준 11월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 11월경</span></div>
+                  <div class="timeline-event unknown edge" style="--x:78%" aria-label="BMVC 2029, 예년 기준 11월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 11월경</span></div>
+                  <div class="timeline-event unknown" style="--x:98%" aria-label="BMVC 2030, 개최 도시와 날짜 미확인; 월 위치는 예년 기준 11월경 추정"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 11월경</span></div>
                 </div>
               </div>
 
               <div class="timeline-lane">
                 <div class="lane-name">ICCV</div>
                 <div class="timeline-track">
-                  <a href="https://iccv.thecvf.com/Conferences/2027/Dates" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event asia" style="--x:45.5%;--w:17%" aria-label="ICCV 2027 Hong Kong, China, 10월 3일부터 7일, HKCEC. 공식 페이지 간 날짜 차이 있음" title="HKCEC · 공식 날짜 페이지 기준 10/3–7; venue 페이지는 10/2–8"><span class="event-place"><span>Hong Kong</span><span>(China)</span></span><span class="event-date">10/3–7 *</span><span class="event-venue">HKCEC</span></a>
-                  <div class="timeline-event unknown" style="--x:95.5%;--w:18%" aria-label="ICCV 2029, CVF 공식 목록 기준 개최 도시 미정, 예년 기준 10월경 추정"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 10월경</span></div>
+                  <a href="https://iccv.thecvf.com/Conferences/2027/Dates" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event asia" style="--x:36.4%;--w:17%" aria-label="ICCV 2027 Hong Kong, China, 10월 3일부터 7일, HKCEC. 공식 페이지 간 날짜 차이 있음" title="HKCEC · 공식 날짜 페이지 기준 10/3–7; venue 페이지는 10/2–8"><span class="event-place"><span>Hong Kong</span><span>(China)</span></span><span class="event-date">10/3–7 *</span><span class="event-venue">HKCEC</span></a>
+                  <div class="timeline-event unknown" style="--x:76.4%;--w:18%" aria-label="ICCV 2029, CVF 공식 목록 기준 개최 도시 미정, 예년 기준 10월경 추정"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 10월경</span></div>
                 </div>
               </div>
 
               <div class="timeline-lane">
                 <div class="lane-name">ECCV</div>
                 <div class="timeline-track">
-                  <a href="https://eccv.ecva.net/Conferences/2026" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event europe past" style="--x:18%;--w:17%" aria-label="ECCV 2026 종료, Malmö, Sweden, 9월 8일부터 12일, Malmö Arena · Malmömässan" title="Venue: Malmö Arena · Malmömässan"><span class="event-place"><span>Malmö</span><span>(Sweden)</span></span><span class="event-date">9/8–12</span><span class="event-venue">Malmö Arena · Malmömässan</span></a>
-                  <div class="timeline-event unknown" style="--x:68%" aria-label="ECCV 2028, 예년 기준 9월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 9월경</span></div>
+                  <a href="https://eccv.ecva.net/Conferences/2026" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event europe past" style="--x:14.4%;--w:17%" aria-label="ECCV 2026 종료, Malmö, Sweden, 9월 8일부터 12일, Malmö Arena · Malmömässan" title="Venue: Malmö Arena · Malmömässan"><span class="event-place"><span>Malmö</span><span>(Sweden)</span></span><span class="event-date">9/8–12</span><span class="event-venue">Malmö Arena · Malmömässan</span></a>
+                  <div class="timeline-event unknown" style="--x:54.4%" aria-label="ECCV 2028, 예년 기준 9월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 9월경</span></div>
+                  <div class="timeline-event unknown" style="--x:94.4%" aria-label="ECCV 2030, 개최 도시와 날짜 미확인; 월 위치는 예년 기준 9월경 추정"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 9월경</span></div>
                 </div>
               </div>
 
               <div class="timeline-lane">
                 <div class="lane-name">3DV</div>
                 <div class="timeline-track">
-                  <a href="https://3dvconf.github.io/2026/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america past" style="--x:6.5%;--w:17%" aria-label="3DV 2026 Vancouver, Canada, 3월 20일부터 23일, 기준일 이전 종료"><span class="event-place"><span>Vancouver</span><span>(Canada)</span></span><span class="event-date">3/20–23</span></a>
-                  <a href="https://3dvconf.github.io/2027/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event europe" style="--x:32.5%;--w:17%" aria-label="3DV 2027 Thessaloniki, Greece, 4월 6일부터 9일, Thessaloniki Concert Hall (M2 building)" title="Venue: Thessaloniki Concert Hall (M2 building)"><span class="event-place"><span>Thessaloniki</span><span>(Greece)</span></span><span class="event-date">4/6–9</span><span class="event-venue">Thessaloniki Concert Hall</span></a>
-                  <div class="timeline-event unknown" style="--x:57.5%" aria-label="3DV 2028, 예년 기준 3월에서 4월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 3–4월경</span></div>
-                  <div class="timeline-event unknown" style="--x:82.5%" aria-label="3DV 2029, 예년 기준 3월에서 4월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 3–4월경</span></div>
+                  <a href="https://3dvconf.github.io/2026/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america past" style="--x:5.2%;--w:17%" aria-label="3DV 2026 Vancouver, Canada, 3월 20일부터 23일, 기준일 이전 종료"><span class="event-place"><span>Vancouver</span><span>(Canada)</span></span><span class="event-date">3/20–23</span></a>
+                  <a href="https://3dvconf.github.io/2027/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event europe" style="--x:26%;--w:17%" aria-label="3DV 2027 Thessaloniki, Greece, 4월 6일부터 9일, Thessaloniki Concert Hall (M2 building)" title="Venue: Thessaloniki Concert Hall (M2 building)"><span class="event-place"><span>Thessaloniki</span><span>(Greece)</span></span><span class="event-date">4/6–9</span><span class="event-venue">Thessaloniki Concert Hall</span></a>
+                  <div class="timeline-event unknown" style="--x:46%" aria-label="3DV 2028, 예년 기준 3월에서 4월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 3–4월경</span></div>
+                  <div class="timeline-event unknown" style="--x:66%" aria-label="3DV 2029, 예년 기준 3월에서 4월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 3–4월경</span></div>
+                  <div class="timeline-event unknown" style="--x:86%" aria-label="3DV 2030, 개최 도시와 날짜 미확인; 월 위치는 예년 기준 3–4월경 추정"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 3–4월경</span></div>
                 </div>
               </div>
 
               <div class="timeline-lane">
                 <div class="lane-name">ISMAR</div>
                 <div class="timeline-track">
-                  <a href="https://www.ieeeismar.net/2026/venue/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event europe past" style="--x:20.5%;--w:17%" aria-label="ISMAR 2026 종료, Bari, Italy, 10월 5일부터 9일, Nicolaus Hotel" title="Venue: The Nicolaus Hotel Bari"><span class="event-place"><span>Bari</span><span>(Italy)</span></span><span class="event-date">10/5–9</span><span class="event-venue">Nicolaus Hotel</span></a>
-                  <a href="https://www.ismar.net/ismar_future/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event asia" style="--x:45.5%;--w:17%" aria-label="ISMAR 2027 Kobe, Japan, 10월 11일부터 15일"><span class="event-place"><span>Kobe</span><span>(Japan)</span></span><span class="event-date">10/11–15</span></a>
-                  <a href="https://www.ismar.net/ismar_future/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event europe" style="--x:70.5%;--w:17%" aria-label="ISMAR 2028 Cyprus, 개최 도시는 미공개, 10월 9일부터 13일"><span class="event-place"><span>Cyprus</span><span>(city TBA)</span></span><span class="event-date">10/9–13</span></a>
-                  <a href="https://www.ismar.net/ismar_future/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america edge" style="--x:95.5%;--w:17%" aria-label="ISMAR 2029 Canada, 개최 도시는 미공개, 10월 초"><span class="event-place"><span>Canada</span><span>(city TBA)</span></span><span class="event-date">10월 초</span></a>
+                  <a href="https://www.ieeeismar.net/2026/venue/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event europe past" style="--x:16.4%;--w:17%" aria-label="ISMAR 2026 종료, Bari, Italy, 10월 5일부터 9일, Nicolaus Hotel" title="Venue: The Nicolaus Hotel Bari"><span class="event-place"><span>Bari</span><span>(Italy)</span></span><span class="event-date">10/5–9</span><span class="event-venue">Nicolaus Hotel</span></a>
+                  <a href="https://www.ismar.net/ismar_future/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event asia" style="--x:36.4%;--w:17%" aria-label="ISMAR 2027 Kobe, Japan, 10월 11일부터 15일"><span class="event-place"><span>Kobe</span><span>(Japan)</span></span><span class="event-date">10/11–15</span></a>
+                  <a href="https://www.ismar.net/ismar_future/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event europe" style="--x:56.4%;--w:17%" aria-label="ISMAR 2028 Cyprus, 개최 도시는 미공개, 10월 9일부터 13일"><span class="event-place"><span>Cyprus</span><span>(city TBA)</span></span><span class="event-date">10/9–13</span></a>
+                  <a href="https://www.ismar.net/ismar_future/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america edge" style="--x:76.4%;--w:17%" aria-label="ISMAR 2029 Canada, 개최 도시는 미공개, 10월 초"><span class="event-place"><span>Canada</span><span>(city TBA)</span></span><span class="event-date">10월 초</span></a>
+                  <div class="timeline-event unknown" style="--x:96.4%" aria-label="ISMAR 2030, 개최 도시와 날짜 미확인; 월 위치는 예년 기준 10월경 추정"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 10월경</span></div>
                 </div>
               </div>
 
               <div class="timeline-lane">
                 <div class="lane-name">SIGGRAPH Asia</div>
                 <div class="timeline-track">
-                  <a href="https://asia.siggraph.org/2026/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event asia" style="--x:24%" aria-label="SIGGRAPH Asia 2026 Kuala Lumpur, Malaysia, 12월 1일부터 4일, Kuala Lumpur Convention Centre (KLCC)" title="Venue: Kuala Lumpur Convention Centre (KLCC)"><span class="event-place"><span>Kuala Lumpur</span><span>(Malaysia)</span></span><span class="event-date">12/1–4</span><span class="event-venue">KLCC</span></a>
-                  <a href="https://asia.siggraph.org/2026/about-the-event/siggraph-asia-2027/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event asia" style="--x:49%" aria-label="SIGGRAPH Asia 2027 Tokyo, Japan, 11월 30일부터 12월 3일, Tokyo International Forum" title="Venue: Tokyo International Forum"><span class="event-place"><span>Tokyo</span><span>(Japan)</span></span><span class="event-date">11/30–12/3</span><span class="event-venue">Tokyo International Forum</span></a>
-                  <div class="timeline-event unknown" style="--x:74%" aria-label="SIGGRAPH Asia 2028, 예년 기준 12월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 12월경</span></div>
-                  <div class="timeline-event unknown edge" style="--x:99%" aria-label="SIGGRAPH Asia 2029, 예년 기준 12월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 12월경</span></div>
+                  <a href="https://asia.siggraph.org/2026/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event asia" style="--x:19.2%" aria-label="SIGGRAPH Asia 2026 Kuala Lumpur, Malaysia, 12월 1일부터 4일, Kuala Lumpur Convention Centre (KLCC)" title="Venue: Kuala Lumpur Convention Centre (KLCC)"><span class="event-place"><span>Kuala Lumpur</span><span>(Malaysia)</span></span><span class="event-date">12/1–4</span><span class="event-venue">KLCC</span></a>
+                  <a href="https://asia.siggraph.org/2026/about-the-event/siggraph-asia-2027/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event asia" style="--x:39.2%" aria-label="SIGGRAPH Asia 2027 Tokyo, Japan, 11월 30일부터 12월 3일, Tokyo International Forum" title="Venue: Tokyo International Forum"><span class="event-place"><span>Tokyo</span><span>(Japan)</span></span><span class="event-date">11/30–12/3</span><span class="event-venue">Tokyo International Forum</span></a>
+                  <div class="timeline-event unknown" style="--x:59.2%" aria-label="SIGGRAPH Asia 2028, 예년 기준 12월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 12월경</span></div>
+                  <div class="timeline-event unknown edge" style="--x:79.2%" aria-label="SIGGRAPH Asia 2029, 예년 기준 12월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 12월경</span></div>
+                  <div class="timeline-event unknown" style="--x:99.2%" aria-label="SIGGRAPH Asia 2030, 개최 도시와 날짜 미확인; 월 위치는 예년 기준 12월경 추정"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 12월경</span></div>
                 </div>
               </div>
 
               <div class="timeline-lane">
                 <div class="lane-name">ICLR</div>
                 <div class="timeline-track">
-                  <a href="https://iclr.cc/Conferences/2026" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event south-america past" style="--x:8%;--w:19%" aria-label="ICLR 2026 Rio de Janeiro, Brazil, 4월 23일부터 27일, 기준일 이전 종료, Riocentro" title="Venue: Riocentro"><span class="event-place"><span>Rio de Janeiro</span><span>(Brazil)</span></span><span class="event-date">4/23–27</span><span class="event-venue">Riocentro</span></a>
-                  <a href="https://iclr.cc/Conferences/2027" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america" style="--x:37.5%;--w:19%" aria-label="ICLR 2027 San Francisco, California, USA, 4월 26일부터 30일, OpenReview 기준; 세부 베뉴 미공개" title="OpenReview: San Francisco; 학회 홈페이지는 California로 표기, 세부 베뉴 미공개"><span class="event-place"><span>San Francisco</span><span>(USA)</span></span><span class="event-date">4/26–30</span></a>
-                  <div class="timeline-event unknown" style="--x:58%" aria-label="ICLR 2028, 예년 기준 4월에서 5월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 4–5월경</span></div>
-                  <div class="timeline-event unknown" style="--x:83%" aria-label="ICLR 2029, 예년 기준 4월에서 5월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 4–5월경</span></div>
+                  <a href="https://iclr.cc/Conferences/2026" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event south-america past" style="--x:6.4%;--w:19%" aria-label="ICLR 2026 Rio de Janeiro, Brazil, 4월 23일부터 27일, 기준일 이전 종료, Riocentro" title="Venue: Riocentro"><span class="event-place"><span>Rio de Janeiro</span><span>(Brazil)</span></span><span class="event-date">4/23–27</span><span class="event-venue">Riocentro</span></a>
+                  <a href="https://iclr.cc/Conferences/2027" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america" style="--x:30%;--w:19%" aria-label="ICLR 2027 San Francisco, California, USA, 4월 26일부터 30일, OpenReview 기준; 세부 베뉴 미공개" title="OpenReview: San Francisco; 학회 홈페이지는 California로 표기, 세부 베뉴 미공개"><span class="event-place"><span>San Francisco</span><span>(USA)</span></span><span class="event-date">4/26–30</span></a>
+                  <div class="timeline-event unknown" style="--x:46.4%" aria-label="ICLR 2028, 예년 기준 4월에서 5월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 4–5월경</span></div>
+                  <div class="timeline-event unknown" style="--x:66.4%" aria-label="ICLR 2029, 예년 기준 4월에서 5월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 4–5월경</span></div>
+                  <div class="timeline-event unknown" style="--x:86.4%" aria-label="ICLR 2030, 개최 도시와 날짜 미확인; 월 위치는 예년 기준 4–5월경 추정"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 4–5월경</span></div>
                 </div>
               </div>
 
               <div class="timeline-lane">
                 <div class="lane-name">ICML</div>
                 <div class="timeline-track">
-                  <a href="https://icml.cc/Conferences/2026" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event asia past" style="--x:14%;--w:17%" aria-label="ICML 2026 Seoul, Korea, 7월 6일부터 11일, 기준일 이전 종료, COEX" title="Venue: COEX"><span class="event-place"><span>Seoul</span><span>(Korea)</span></span><span class="event-date">7/6–11</span><span class="event-venue">COEX</span></a>
-                  <a href="https://icml.cc/Conferences/2027" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event south-america" style="--x:39.6%;--w:17%" aria-label="ICML 2027 Rio de Janeiro, Brazil, 7월 31일부터 8월 6일, Riocentro" title="Venue: Riocentro; 7/31 Expo, 8/1 Tutorials, 8/2–4 Main Conference, 8/5–6 Workshops"><span class="event-place"><span>Rio de Janeiro</span><span>(Brazil)</span></span><span class="event-date">7/31–8/6</span><span class="event-venue">Riocentro</span></a>
-                  <a href="https://icml.cc/Conferences/FutureMeetings" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america" style="--x:62.5%;--w:19%" aria-label="ICML 2028 미국 동부, 도시와 날짜 미공개"><span class="event-place">미국 동부</span><span class="event-date">도시 · 날짜 미공개</span></a>
-                  <div class="timeline-event unknown" style="--x:89%" aria-label="ICML 2029, 예년 기준 7월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 7월경</span></div>
+                  <a href="https://icml.cc/Conferences/2026" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event asia past" style="--x:11.2%;--w:17%" aria-label="ICML 2026 Seoul, Korea, 7월 6일부터 11일, 기준일 이전 종료, COEX" title="Venue: COEX"><span class="event-place"><span>Seoul</span><span>(Korea)</span></span><span class="event-date">7/6–11</span><span class="event-venue">COEX</span></a>
+                  <a href="https://icml.cc/Conferences/2027" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event south-america" style="--x:31.68%;--w:17%" aria-label="ICML 2027 Rio de Janeiro, Brazil, 7월 31일부터 8월 6일, Riocentro" title="Venue: Riocentro; 7/31 Expo, 8/1 Tutorials, 8/2–4 Main Conference, 8/5–6 Workshops"><span class="event-place"><span>Rio de Janeiro</span><span>(Brazil)</span></span><span class="event-date">7/31–8/6</span><span class="event-venue">Riocentro</span></a>
+                  <a href="https://icml.cc/Conferences/FutureMeetings" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america" style="--x:50%;--w:19%" aria-label="ICML 2028 미국 동부, 도시와 날짜 미공개"><span class="event-place">미국 동부</span><span class="event-date">도시 · 날짜 미공개</span></a>
+                  <div class="timeline-event unknown" style="--x:71.2%" aria-label="ICML 2029, 예년 기준 7월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 7월경</span></div>
+                  <div class="timeline-event unknown" style="--x:91.2%" aria-label="ICML 2030, 개최 도시와 날짜 미확인; 월 위치는 예년 기준 7월경 추정"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 7월경</span></div>
                 </div>
               </div>
 
               <div class="timeline-lane">
                 <div class="lane-name">NeurIPS</div>
                 <div class="timeline-track">
-                  <a href="https://neurips.cc/Conferences/2026" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event oceania" style="--x:24%;--w:17%" aria-label="NeurIPS 2026 Sydney, Australia, 12월 6일부터 12일"><span class="event-place"><span>Sydney</span><span>(Australia)</span></span><span class="event-date">12/6–12</span></a>
-                  <a href="https://neurips.cc/Conferences/FutureMeetings" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event europe" style="--x:37.5%;--w:18%" aria-label="NeurIPS 2027 Europe, 도시와 날짜 미공개"><span class="event-place">Europe</span><span class="event-date">도시 · 날짜 미공개</span></a>
-                  <a href="https://neurips.cc/Conferences/FutureMeetings" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america" style="--x:62.5%;--w:19%" aria-label="NeurIPS 2028 Western United States, 도시와 날짜 미공개"><span class="event-place">Western US</span><span class="event-date">도시 · 날짜 미공개</span></a>
-                  <div class="timeline-event unknown edge" style="--x:99%" aria-label="NeurIPS 2029, 예년 기준 12월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 12월경</span></div>
+                  <a href="https://neurips.cc/Conferences/2026" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event oceania" style="--x:19.2%;--w:17%" aria-label="NeurIPS 2026 Sydney, Australia, 12월 6일부터 12일"><span class="event-place"><span>Sydney</span><span>(Australia)</span></span><span class="event-date">12/6–12</span></a>
+                  <a href="https://neurips.cc/Conferences/FutureMeetings" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event europe" style="--x:30%;--w:18%" aria-label="NeurIPS 2027 Europe, 도시와 날짜 미공개"><span class="event-place">Europe</span><span class="event-date">도시 · 날짜 미공개</span></a>
+                  <a href="https://neurips.cc/Conferences/FutureMeetings" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america" style="--x:50%;--w:19%" aria-label="NeurIPS 2028 Western United States, 도시와 날짜 미공개"><span class="event-place">Western US</span><span class="event-date">도시 · 날짜 미공개</span></a>
+                  <div class="timeline-event unknown edge" style="--x:79.2%" aria-label="NeurIPS 2029, 예년 기준 12월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 12월경</span></div>
+                  <div class="timeline-event unknown" style="--x:99.2%" aria-label="NeurIPS 2030, 개최 도시와 날짜 미확인; 월 위치는 예년 기준 12월경 추정"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 12월경</span></div>
                 </div>
               </div>
 
               <div class="timeline-lane">
                 <div class="lane-name">AAAI</div>
                 <div class="timeline-track">
-                  <a href="https://aaai.org/conference/aaai/aaai-26/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event asia past" style="--x:2.5%;--w:17%" aria-label="AAAI 2026 Singapore, Singapore, 1월 20일부터 27일, 기준일 이전 종료"><span class="event-place"><span>Singapore</span><span>(Singapore)</span></span><span class="event-date">1/20–27</span></a>
-                  <a href="https://aaai.org/conference/aaai/aaai-27/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america" style="--x:28.5%;--w:18%" aria-label="AAAI 2027 Montréal, Canada, 2월 16일부터 23일"><span class="event-place"><span>Montréal</span><span>(Canada)</span></span><span class="event-date">2/16–23</span></a>
-                  <div class="timeline-event unknown" style="--x:53.5%" aria-label="AAAI 2028, 예년 기준 1월에서 2월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 1–2월경</span></div>
-                  <div class="timeline-event unknown" style="--x:78.5%" aria-label="AAAI 2029, 예년 기준 1월에서 2월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 1–2월경</span></div>
+                  <a href="https://aaai.org/conference/aaai/aaai-26/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event asia past" style="--x:2%;--w:17%" aria-label="AAAI 2026 Singapore, Singapore, 1월 20일부터 27일, 기준일 이전 종료"><span class="event-place"><span>Singapore</span><span>(Singapore)</span></span><span class="event-date">1/20–27</span></a>
+                  <a href="https://aaai.org/conference/aaai/aaai-27/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event north-america" style="--x:22.8%;--w:18%" aria-label="AAAI 2027 Montréal, Canada, 2월 16일부터 23일"><span class="event-place"><span>Montréal</span><span>(Canada)</span></span><span class="event-date">2/16–23</span></a>
+                  <div class="timeline-event unknown" style="--x:42.8%" aria-label="AAAI 2028, 예년 기준 1월에서 2월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 1–2월경</span></div>
+                  <div class="timeline-event unknown" style="--x:62.8%" aria-label="AAAI 2029, 예년 기준 1월에서 2월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 1–2월경</span></div>
+                  <div class="timeline-event unknown" style="--x:82.8%" aria-label="AAAI 2030, 개최 도시와 날짜 미확인; 월 위치는 예년 기준 1–2월경 추정"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 1–2월경</span></div>
                 </div>
               </div>
 
               <div class="timeline-lane">
                 <div class="lane-name">AAMAS</div>
                 <div class="timeline-track">
-                  <a href="https://cyprusconferences.org/aamas2026/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event europe past" style="--x:10.5%" aria-label="AAMAS 2026 Paphos, Cyprus, 5월 25일부터 29일, 기준일 이전 종료"><span class="event-place"><span>Paphos</span><span>(Cyprus)</span></span><span class="event-date">5/25–29</span></a>
-                  <a href="https://warwick.ac.uk/fac/sci/dcs/aamas2027/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event asia" style="--x:35.5%;--w:17%" aria-label="AAMAS 2027 Hanoi, Vietnam, JW Marriott Hotel, 5월 3일부터 7일" title="Venue: JW Marriott Hotel Hanoi"><span class="event-place"><span>Hanoi</span><span>(Vietnam)</span></span><span class="event-date">5/3–7</span><span class="event-venue">JW Marriott Hotel</span></a>
-                  <div class="timeline-event unknown" style="--x:60.5%" aria-label="AAMAS 2028, 예년 기준 5월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 5월경</span></div>
-                  <div class="timeline-event unknown" style="--x:85.5%" aria-label="AAMAS 2029, 예년 기준 5월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 5월경</span></div>
+                  <a href="https://cyprusconferences.org/aamas2026/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event europe past" style="--x:8.4%" aria-label="AAMAS 2026 Paphos, Cyprus, 5월 25일부터 29일, 기준일 이전 종료"><span class="event-place"><span>Paphos</span><span>(Cyprus)</span></span><span class="event-date">5/25–29</span></a>
+                  <a href="https://warwick.ac.uk/fac/sci/dcs/aamas2027/" target="_blank" rel="noopener noreferrer" draggable="false" class="timeline-event asia" style="--x:28.4%;--w:17%" aria-label="AAMAS 2027 Hanoi, Vietnam, JW Marriott Hotel, 5월 3일부터 7일" title="Venue: JW Marriott Hotel Hanoi"><span class="event-place"><span>Hanoi</span><span>(Vietnam)</span></span><span class="event-date">5/3–7</span><span class="event-venue">JW Marriott Hotel</span></a>
+                  <div class="timeline-event unknown" style="--x:48.4%" aria-label="AAMAS 2028, 예년 기준 5월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 5월경</span></div>
+                  <div class="timeline-event unknown" style="--x:68.4%" aria-label="AAMAS 2029, 예년 기준 5월경 추정, 개최 도시와 날짜 미공개"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 5월경</span></div>
+                  <div class="timeline-event unknown" style="--x:88.4%" aria-label="AAMAS 2030, 개최 도시와 날짜 미확인; 월 위치는 예년 기준 5월경 추정"><span class="event-place">TBA</span><span class="event-date">예년 기준 · 5월경</span></div>
                 </div>
               </div>
             </div>
 
-            <p class="timeline-note">도시 또는 권역이 공개된 일정과 TBA 일정 표시 · 날짜 미공개 일정의 월 위치는 예년 개최 시기를 기준으로 추정 · IFAC World Congress는 3년 주기로 2027·2028 미개최 · 클릭하면 해당 연도 홈페이지 또는 학회·개최기관의 공식 발표로 이동</p>
+            <p class="timeline-note">도시 또는 권역이 공개된 일정과 TBA 일정 표시 · 날짜 미공개 일정의 월 위치는 예년 개최 시기를 기준으로 추정 · IFAC World Congress는 3년 주기로 2027·2028·2030 미개최 · 클릭하면 해당 연도 홈페이지 또는 학회·개최기관의 공식 발표로 이동</p>
           </div>
         </div>
       </figure>
@@ -1199,6 +1226,8 @@
         <li><a href="https://icml.cc/Conferences/2027">ICML 2027</a>: South America에서 Rio de Janeiro, Brazil로 구체화하고 7/31–8/6 및 Riocentro 추가.</li>
         <li><a href="https://2026.corl.org/">CoRL 2026</a>, <a href="https://www.isairas-isparo.de/">iSpaRo 2026</a>, <a href="https://2026.iccas.org/">ICCAS 2026</a>을 11/16 기준 종료 표시로 갱신.</li>
         <li>11/16 이전에 끝난 모든 행사에 회색 배경과 날짜 앞 ‘종료’ 문구를 함께 표시해 완료 상태를 명확히 구분.</li>
+        <li>타임라인을 2030년까지 확장. <a href="https://www.ieee-ras.org/event/2030-ieee-international-conference-on-robotics-and-automation-icra-74057/">ICRA 2030</a>: Bangkok, Thailand, QSNCC, 5/13–17(IEEE RAS 기준). * <a href="https://www.ttgmice.com/2026/07/27/thailand-wins-bid-to-host-ieee-icra-2030/">일부 초기 보도</a>는 6/13–17로 상충하므로 예약 전 공식 일정 재확인 필요.</li>
+        <li>IROS 2030은 TBA로 표시. <a href="https://www.thecvf.com/?page_id=100">CVF 공식 목록</a>에 공개된 CVPR 2030 Denver 및 WACV 2030 Waikoloa도 반영. 다른 2030 TBA는 미확인 자리표시자이며 월 위치는 예년 기준 추정. ICCV는 홀수 연도, IFAC World Congress는 3년 주기이므로 2030 행사 없음.</li>
         <li>이번 갱신은 위 항목 중심의 부분 확인. 다른 일정은 이전 확인 내용을 유지하며, 날짜·도시가 미공개인 항목은 추정으로 확정하지 않음.</li>
       </ul>
     </details>
@@ -1243,6 +1272,9 @@
       const viewport = document.querySelector(".timeline-viewport");
       if (!timeline || !viewport) return;
 
+      const yearCount = timeline.querySelectorAll(".year-axis > span").length;
+      if (!yearCount) return;
+
       const clampEventsToYears = () => {
         timeline.querySelectorAll(".timeline-event").forEach((event) => {
           const track = event.parentElement;
@@ -1251,8 +1283,8 @@
           const rawPosition = Number.parseFloat(getComputedStyle(event).getPropertyValue("--x"));
           if (!trackWidth || !eventWidth || !Number.isFinite(rawPosition)) return;
 
-          const yearIndex = Math.min(3, Math.max(0, Math.floor(rawPosition / 25)));
-          const yearWidth = trackWidth / 4;
+          const yearIndex = Math.min(yearCount - 1, Math.max(0, Math.floor(rawPosition / (100 / yearCount))));
+          const yearWidth = trackWidth / yearCount;
           const inset = 8;
           const minimum = yearIndex * yearWidth + eventWidth / 2 + inset;
           const maximum = (yearIndex + 1) * yearWidth - eventWidth / 2 - inset;
