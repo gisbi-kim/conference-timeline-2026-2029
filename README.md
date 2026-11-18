@@ -2,7 +2,7 @@
 
 로보틱스와 CV·ML·AI 분야의 주요 학회 개최 일정과 지역을 한눈에 비교하는 정적 타임라인입니다.
 
-- 최근 부분 갱신: 2026년 11월 16일 (전체 일정의 일괄 재검증을 의미하지 않음)
+- 최근 부분 갱신: 2026년 11월 19일 (전체 일정의 일괄 재검증을 의미하지 않음)
 - 지역별 색상 구분
 - 종료된 일정 회색 표시
 - 미공개 일정은 예년 개최 시기를 기준으로 TBA 배치
@@ -59,3 +59,11 @@ ICLR 2027은 공식 본문이 여전히 California 및 venue 미공개로 안내
 - 다른 2030 TBA는 미확인 자리표시자입니다. 예년 개최 시기를 기준으로 배치했으며 공식 날짜나 미발표 여부를 확정한 것이 아닙니다. WAFR·ECCV는 짝수 연도에 추가했고, ICCV·IFAC World Congress는 개최 주기에 따라 2030 칸을 비워 둡니다.
 - 현재 27개 학회, 28개 행, 총 130개 일정입니다. 가로 스크롤 또는 드래그로 2030년을 볼 수 있습니다.
 - 검증: 기존 104개 일정의 내용·링크·종료 상태 보존, 2030 추가 일정의 연도·개최 주기, 130개 카드의 최초 배치 및 화면 폭 변경 후 연도 경계 준수, JavaScript 문법을 확인했습니다.
+
+## 2026-11-19 Humanoids 공모 권역, RoboSoft 및 IEEE CASE 반영
+
+- [IEEE RAS 공고](https://www.ieee-ras.org/call-for-proposals-organizing-ieee-ras-humanoids-2027-and-humanoids-2028/)에 따라 Humanoids 2027은 유럽·중동·아프리카, 2028은 아시아·태평양을 개최 제안 공모 권역으로 표시합니다. 개최 도시와 날짜는 미정입니다.
+- RoboSoft는 [2026 가나자와 4/7–11](https://www.robosoft2026.org/), [2027 브리즈번 4/5–9](https://robosoft27.com/), [2028 에드먼턴 4/23–29](https://www.ieee-ras.org/event/2028-ieee-11th-international-conference-on-soft-robotics-robosoft-73111/)를 추가했습니다.
+- IEEE CASE는 [2026 선양 8/17–21](https://www.ieee-ras.org/event/2026-ieee-22nd-international-conference-on-automation-science-and-engineering-case-69030/), [2027 린츠 8/23–27](https://www.ieee-ras.org/event/2027-ieee-23rd-international-conference-on-automation-science-and-engineering-case-71151/), [2028 시카고 8/13–17](https://www.ieee-ras.org/event/2028-ieee-24th-international-conference-on-automation-science-and-engineering-case-71117/)을 추가했습니다. 2028년 날짜는 IEEE RAS 개별 행사 페이지 기준입니다. [IEEE RAS 개최지 목록](https://www.ieee-ras.org/conferences-workshops/fully-sponsored/case/past-and-future-venues/)의 8/16–20과 달라 별표 및 출처를 표시합니다.
+- 페이지 하단에 RSS·ICML·IROS 2027의 투고 마감과 ICCV·OCEANS 2029의 개최지 확인 결과를 기록했습니다.
+- 총 29개 학회, 30개 행, 140개 일정 카드입니다.
